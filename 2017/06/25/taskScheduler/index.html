@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="leetcode," />
 
 
 
@@ -91,15 +91,17 @@
 
 
 
-<meta name="description" content="静水流深">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ChenZengze&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="DescriptionGiven a char array representing tasks CPU need to do. It contains capital letters A to Z where different letters represent different tasks.Tasks could be done without original order. Each t">
+<meta name="keywords" content="leetcode">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【Leetcode】621.Task Scheduler">
+<meta property="og:url" content="http://yoursite.com/2017/06/25/taskScheduler/index.html">
 <meta property="og:site_name" content="ChenZengze&#39;s Blog">
-<meta property="og:description" content="静水流深">
+<meta property="og:description" content="DescriptionGiven a char array representing tasks CPU need to do. It contains capital letters A to Z where different letters represent different tasks.Tasks could be done without original order. Each t">
+<meta property="og:updated_time" content="2017-06-25T10:05:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ChenZengze&#39;s Blog">
-<meta name="twitter:description" content="静水流深">
+<meta name="twitter:title" content="【Leetcode】621.Task Scheduler">
+<meta name="twitter:description" content="DescriptionGiven a char array representing tasks CPU need to do. It contains capital letters A to Z where different letters represent different tasks.Tasks could be done without original order. Each t">
 
 
 
@@ -127,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/25/taskScheduler/"/>
 
 
 
 
 
-  <title>ChenZengze's Blog</title>
+  <title>【Leetcode】621.Task Scheduler | ChenZengze's Blog</title>
   
 
 
@@ -168,9 +170,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -243,9 +243,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -271,9 +271,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/25/taskScheduler/" itemprop="url">【Leetcode】621.Task Scheduler</a></h1>
+          <h1 class="post-title" itemprop="name headline">【Leetcode】621.Task Scheduler</h1>
         
 
         <div class="post-meta">
@@ -342,9 +340,7 @@
       
 
       
-        
-          
-            <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given a char array representing tasks CPU need to do. It contains capital letters A to Z where different letters represent different tasks.Tasks could be done without original order. Each task could be done in one interval. For each interval, CPU could finish one task or just be idle.</p>
+        <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given a char array representing tasks CPU need to do. It contains capital letters A to Z where different letters represent different tasks.Tasks could be done without original order. Each task could be done in one interval. For each interval, CPU could finish one task or just be idle.</p>
 <p>However, there is a non-negative cooling interval n that means between two same tasks, there must be at least n intervals that CPU are doing different tasks or just be idle.</p>
 <p>You need to return the least number of intervals the CPU will take to finish all the given tasks.</p>
 <h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><p>Input: tasks = [‘A’,’A’,’A’,’B’,’B’,’B’], n = 2<br>Output: 8<br>Explanation: A -&gt; B -&gt; idle -&gt; A -&gt; B -&gt; idle -&gt; A -&gt; B.</p>
@@ -362,331 +358,93 @@
 <h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>这个解法的复杂度还是O(n^2)，看到网上有人用了一个数学解法，还是po在这里吧，但是我觉得这个解法要在面试的时候想出来确实很难，数学解法可以保证O(n)的复杂度，差不多是13ms和213ms的差距，确实感觉到算法的重要性，复杂度太大的解法是灾难。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">_leastInterval_</span><span class="params">(<span class="keyword">char</span>[] tasks, <span class="keyword">int</span> n)</span> </span>&#123;</div><div class="line">        <span class="comment">//思路不容易想起来，因为有数学的思路</span></div><div class="line">        <span class="keyword">int</span>[] test = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">26</span>];</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; tasks.length; i++) &#123;</div><div class="line">            test[tasks[i] - <span class="string">'A'</span>]++;</div><div class="line">        &#125;</div><div class="line">        Arrays.sort(test);</div><div class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> len = test.length - <span class="number">1</span>;</div><div class="line">        <span class="keyword">while</span> (test[len] == test[--len]) &#123;</div><div class="line">            count++;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> Math.max(tasks.length,(test[<span class="number">25</span>] - <span class="number">1</span>) * (n + <span class="number">1</span>) + count + <span class="number">1</span>);</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
 <h3 id="Analyse-2"><a href="#Analyse-2" class="headerlink" title="Analyse"></a>Analyse</h3><p>这里也分析一下这个思路，这个思路其实和我提交的思路是一致的，不过我是保证每轮最优，这个有一种把这所有轮一起提纲挈领的感觉。<br>按照数组存储之后排序，首先当做n很大，然后将个数最大的那个数字来排，不算最后一轮，那就是(test[25]-1)*(n+1)，这已经是除去最后一轮的长度了，这个时候想，其实剩下的最后一轮只有和个数最大那个数一样大的剩下了，那就是前面的while找出的(count+1)，即就是看你还有几个剩下的一起排；如果当做n很小的话，那当然就是tasks.length可以直接存储了，这个思路完全没毛病。<br>很少用贪心算法解题，其实贪心算法能做出全局最优的解法也不那么多，还是好好总结吧。</p>
 
-          
-        
       
     </div>
 
     <div>
       
+        
+
+      
     </div>
 
     <div>
       
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/21/maximumDistanceInArrays/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="陈曾泽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ChenZengze's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/21/maximumDistanceInArrays/" itemprop="url">【Leetcode】624.Maximum Distance in Arrays</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-21T09:20:31+08:00">
-                2017-06-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/06/21/maximumDistanceInArrays/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/06/21/maximumDistanceInArrays/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2017/06/21/maximumDistanceInArrays/" class="leancloud_visitors" data-flag-title="【Leetcode】624.Maximum Distance in Arrays">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数 </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechat-reward-image.jpeg" alt="陈曾泽 WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
       
       
-
-      
-        
-          
-            <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given m arrays, and each array is sorted in ascending order. Now you can pick up two integers from two different arrays (each array picks one) and calculate the distance. We define the distance between two integers a and b to be their absolute difference |a-b|. Your task is to find the maximum distance.</p>
-<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><p>Input:<br>[[1,2,3],<br> [4,5],<br> [1,2,3]]<br>Output: 4<br>Explanation:<br>One way to reach the maximum distance 4 is to pick 1 in the first or third array and pick 5 in the second array.</p>
-<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>1.Each given array will have at least 1 number. There will be at least two non-empty arrays.<br>2.The total number of the integers in all the m arrays will be in the range of [2, 10000].<br>3.The integers in the m arrays will be in the range of [-10000, 10000].</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><h2 id="First"><a href="#First" class="headerlink" title="First"></a>First</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxDistance</span><span class="params">(List&lt;List&lt;Integer&gt;&gt; arrays)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (arrays == <span class="keyword">null</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (arrays.size() == <span class="number">1</span>) &#123;</div><div class="line">            List&lt;Integer&gt; list = arrays.get(<span class="number">0</span>);</div><div class="line">            <span class="keyword">return</span> list.get(list.size() - <span class="number">1</span>) - list.get(<span class="number">0</span>);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">int</span> len = arrays.size();</div><div class="line">        <span class="keyword">int</span> max = <span class="number">0</span>;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arrays.size(); i++) &#123;</div><div class="line">            <span class="keyword">int</span> tempFirst = arrays.get(i).get(<span class="number">0</span>);</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; arrays.size(); j++) &#123;</div><div class="line">                <span class="keyword">if</span> (i == j) &#123;</div><div class="line">                    <span class="keyword">continue</span>;</div><div class="line">                &#125;</div><div class="line">                List&lt;Integer&gt; curList = arrays.get(j);</div><div class="line">                <span class="keyword">int</span> curLast = curList.get(curList.size() - <span class="number">1</span>);</div><div class="line">                <span class="keyword">if</span> (Math.abs(curLast - tempFirst) &gt; max) &#123;</div><div class="line">                    max = curLast - tempFirst;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> max;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<h3 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h3><p>TLE</p>
-<h3 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h3><p>出现TLE，查询得出LC里可能因为复杂度要求不高，由于默认的输入List就是递增的，想到适用两个数组来存每个list的最小和最大值。</p>
-<h2 id="Second"><a href="#Second" class="headerlink" title="Second"></a>Second</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxDistance_</span><span class="params">(List&lt;List&lt;Integer&gt;&gt; arrays)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (arrays == <span class="keyword">null</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (arrays.size() == <span class="number">1</span>) &#123;</div><div class="line">            List&lt;Integer&gt; list = arrays.get(<span class="number">0</span>);</div><div class="line">            <span class="keyword">return</span> list.get(list.size() - <span class="number">1</span>) - list.get(<span class="number">0</span>);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">int</span>[] minArray = <span class="keyword">new</span> <span class="keyword">int</span>[arrays.size()];</div><div class="line">        <span class="keyword">int</span>[] maxArray = <span class="keyword">new</span> <span class="keyword">int</span>[arrays.size()];</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arrays.size(); i++) &#123;</div><div class="line">            List&lt;Integer&gt; array = arrays.get(i);</div><div class="line">            minArray[i] = array.get(<span class="number">0</span>);</div><div class="line">            maxArray[i] = array.get(array.size() - <span class="number">1</span>);</div><div class="line">        &#125;</div><div class="line">        Arrays.sort(minArray);</div><div class="line">        Arrays.sort(maxArray);</div><div class="line">        <span class="keyword">int</span> max = maxArray[maxArray.length - <span class="number">1</span>] - minArray[<span class="number">0</span>];</div><div class="line">        <span class="keyword">return</span> (max &gt; <span class="number">0</span>) ? max : <span class="number">0</span>;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<h3 id="Result-1"><a href="#Result-1" class="headerlink" title="Result"></a>Result</h3><p>WA<br><img src="/2017/06/21/maximumDistanceInArrays/wa.jpg" alt=""></p>
-<h3 id="Analyse-1"><a href="#Analyse-1" class="headerlink" title="Analyse"></a>Analyse</h3><p>这里没有考虑到可能来自一个组的刚好组成了最小和最大，就不符合题目要求。</p>
-<h2 id="Last"><a href="#Last" class="headerlink" title="Last"></a>Last</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxDistance_</span><span class="params">(List&lt;List&lt;Integer&gt;&gt; arrays)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (arrays == <span class="keyword">null</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (arrays.size() == <span class="number">1</span>) &#123;</div><div class="line">            List&lt;Integer&gt; list = arrays.get(<span class="number">0</span>);</div><div class="line">            <span class="keyword">return</span> list.get(list.size() - <span class="number">1</span>) - list.get(<span class="number">0</span>);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">int</span>[] minArray = <span class="keyword">new</span> <span class="keyword">int</span>[arrays.size()];</div><div class="line">        <span class="keyword">int</span>[] maxArray = <span class="keyword">new</span> <span class="keyword">int</span>[arrays.size()];</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arrays.size(); i++) &#123;</div><div class="line">            List&lt;Integer&gt; array = arrays.get(i);</div><div class="line">            minArray[i] = array.get(<span class="number">0</span>);</div><div class="line">            maxArray[i] = array.get(array.size() - <span class="number">1</span>);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">int</span> max = <span class="number">0</span>;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; minArray.length; i++) &#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; maxArray.length; j++) &#123;</div><div class="line">                <span class="keyword">if</span> (i == j) &#123;</div><div class="line">                    <span class="keyword">continue</span>;</div><div class="line">                &#125;</div><div class="line">                max = maxArray[j] - minArray[i] &gt; max ? maxArray[j] - minArray[i] : max;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> (max &gt; <span class="number">0</span>) ? max : <span class="number">0</span>;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<h3 id="Result-2"><a href="#Result-2" class="headerlink" title="Result"></a>Result</h3><p>AC</p>
-<h3 id="Analyse-2"><a href="#Analyse-2" class="headerlink" title="Analyse"></a>Analyse</h3><p>这里就是用两个数组存储然后再比较，这里的时间复杂度是O(n^2)，其实和第一个也类似，可能这里稍微代码更简洁。</p>
-<h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><h3 id="Idea"><a href="#Idea" class="headerlink" title="Idea"></a>Idea</h3><p>想要把O(n^2)的复杂度降低，就只需要一个for，需要在一次遍历的时候就能得到结果，就可以降低到O(n)。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxDistance</span><span class="params">(List&lt;List&lt;Integer&gt;&gt; arrays)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (arrays == <span class="keyword">null</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (arrays.size() == <span class="number">1</span>) &#123;</div><div class="line">            List&lt;Integer&gt; list = arrays.get(<span class="number">0</span>);</div><div class="line">            <span class="keyword">return</span> list.get(list.size() - <span class="number">1</span>) - list.get(<span class="number">0</span>);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">int</span> min = arrays.get(<span class="number">0</span>).get(<span class="number">0</span>);</div><div class="line">        <span class="keyword">int</span> max = arrays.get(<span class="number">0</span>).get(arrays.get(<span class="number">0</span>).size() - <span class="number">1</span>);</div><div class="line">        <span class="keyword">int</span> result = Integer.MIN_VALUE;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; arrays.size(); i++) &#123;</div><div class="line">            result = Math.max(result, Math.abs(arrays.get(i).get(<span class="number">0</span>) - max));</div><div class="line">            result = Math.max(result, Math.abs(arrays.get(i).get(arrays.get(i).size() - <span class="number">1</span>) - min));</div><div class="line">            min = Math.min(min, arrays.get(i).get(<span class="number">0</span>));</div><div class="line">            max = Math.max(max, arrays.get(i).get(arrays.get(i).size() - <span class="number">1</span>));</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> result;</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
-<h3 id="Analyse-3"><a href="#Analyse-3" class="headerlink" title="Analyse"></a>Analyse</h3><p>第一次就得min和max值，然后每次result都交叉两次比较，比较完之后，更新本次之后的min和max值。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/20/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="陈曾泽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ChenZengze's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/20/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-20T17:10:50+08:00">
-                2017-06-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/06/20/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/06/20/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2017/06/20/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数 </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay-reward-image.jpeg" alt="陈曾泽 Alipay"/>
+          <p>支付宝打赏</p>
         </div>
-      </header>
-    
+      
+    </div>
+  </div>
 
-    <div class="post-body" itemprop="articleBody">
 
       
-      
+    </div>
 
+    <div>
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/leetcode/" rel="tag"># leetcode</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/06/21/maximumDistanceInArrays/" rel="next" title="【Leetcode】624.Maximum Distance in Arrays">
+                <i class="fa fa-chevron-left"></i> 【Leetcode】624.Maximum Distance in Arrays
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -694,6 +452,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -713,8 +482,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpeg"
@@ -796,6 +574,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-number">2.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Note"><span class="nav-number">3.</span> <span class="nav-text">Note</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">4.</span> <span class="nav-text">Solution</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#First"><span class="nav-number">4.1.</span> <span class="nav-text">First</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Result"><span class="nav-number">4.1.1.</span> <span class="nav-text">Result</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Analyse"><span class="nav-number">4.1.2.</span> <span class="nav-text">Analyse</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Last"><span class="nav-number">4.2.</span> <span class="nav-text">Last</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Result-1"><span class="nav-number">4.2.1.</span> <span class="nav-text">Result</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Analyse-1"><span class="nav-number">4.2.2.</span> <span class="nav-text">Analyse</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Step1"><span class="nav-number">4.2.2.1.</span> <span class="nav-text">Step1</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Step2"><span class="nav-number">4.2.2.2.</span> <span class="nav-text">Step2</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Step3"><span class="nav-number">4.2.2.3.</span> <span class="nav-text">Step3</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Step4"><span class="nav-number">4.2.2.4.</span> <span class="nav-text">Step4</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Summary"><span class="nav-number">5.</span> <span class="nav-text">Summary</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Analyse-2"><span class="nav-number">5.1.</span> <span class="nav-text">Analyse</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -921,10 +715,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
@@ -942,6 +736,18 @@
       <script id="dsq-count-scr" src="https://sirius.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2017/06/25/taskScheduler/';
+          this.page.identifier = '2017/06/25/taskScheduler/';
+          this.page.title = '【Leetcode】621.Task Scheduler';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://sirius.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
