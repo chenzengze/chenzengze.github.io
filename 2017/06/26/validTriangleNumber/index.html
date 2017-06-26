@@ -98,7 +98,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/26/validTriangleNumber/index.html">
 <meta property="og:site_name" content="ChenZengze&#39;s Blog">
 <meta property="og:description" content="DescriptionGiven an array consists of non-negative integers, your task is to count the number of triplets chosen from the array that can make triangles if we take them as side lengths of a triangle. E">
-<meta property="og:updated_time" content="2017-06-26T03:09:07.000Z">
+<meta property="og:updated_time" content="2017-06-26T09:04:22.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【Leetcode】611. Valid Triangle Number">
 <meta name="twitter:description" content="DescriptionGiven an array consists of non-negative integers, your task is to count the number of triplets chosen from the array that can make triangles if we take them as side lengths of a triangle. E">
@@ -347,7 +347,7 @@
 <h3 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h3><p>AC</p>
 <h3 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h3><p>Brute force方法，复杂度撑到了O(n^3)。</p>
 <h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">triangleNumber</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        Arrays.sort(nums);</div><div class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> len = nums.length;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = len - <span class="number">1</span>; i &gt; <span class="number">1</span>; i--) &#123;</div><div class="line">            <span class="keyword">int</span> l = <span class="number">0</span>;</div><div class="line">            <span class="keyword">int</span> r = i - <span class="number">1</span>;</div><div class="line">            <span class="keyword">while</span> (l &lt; r) &#123;</div><div class="line">                <span class="keyword">if</span> (nums[l] + nums[r] &gt; nums[i]) &#123;</div><div class="line">                    count += r - l;</div><div class="line">                    r--;</div><div class="line">                &#125; <span class="keyword">else</span> &#123;</div><div class="line">                    l++;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> count;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<h3 id="Idea"><a href="#Idea" class="headerlink" title="Idea"></a>Idea</h3><p>这个思路就是界定边界，左边从0开始，右边从len-2开始，i从len-1开始，如果这个时候满足了nums[l]+nnums[r]&gt;nums[i]，那必然l从现在的index到r-1的index配合现在的r和i，都满足构成三角形的条件，复杂度降到了O(n^2)。</p>
+<h3 id="Idea"><a href="#Idea" class="headerlink" title="Idea"></a>Idea</h3><p>这个思路就是界定边界，左边从0开始，右边从len-2开始，i从len-1开始，如果这个时候满足了nums[l]+nums[r]&gt;nums[i]，那必然l从现在的index到r-1的index配合现在的r和i，都满足构成三角形的条件，复杂度降到了O(n^2)。</p>
 <h3 id="Analyse-1"><a href="#Analyse-1" class="headerlink" title="Analyse"></a>Analyse</h3><p>暂时没有发现更低复杂度解法。</p>
 
       
@@ -421,6 +421,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/26/canPlaceFlowers/" rel="prev" title="【Leetcode】605. Can Place Flowers">
+                【Leetcode】605. Can Place Flowers <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -499,7 +503,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

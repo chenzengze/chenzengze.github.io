@@ -91,17 +91,17 @@
 
 
 
-<meta name="description" content="DescriptionGiven an integer array, find three numbers whose product is maximum and output the maximum product. ExampleInput: [1,2,3]Output: 6 Note1.The length of the given array will be in range [3,10">
+<meta name="description" content="DescriptionSuppose you have a long flowerbed in which some of the plots are planted and some are not. However, flowers cannot be planted in adjacent plots - they would compete for water and both would">
 <meta name="keywords" content="leetcode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【Leetcode】628. Maximum Product of Three Numbers">
-<meta property="og:url" content="http://yoursite.com/2017/06/25/maximumProductOfThreeNumbers/index.html">
+<meta property="og:title" content="【Leetcode】605. Can Place Flowers">
+<meta property="og:url" content="http://yoursite.com/2017/06/26/canPlaceFlowers/index.html">
 <meta property="og:site_name" content="ChenZengze&#39;s Blog">
-<meta property="og:description" content="DescriptionGiven an integer array, find three numbers whose product is maximum and output the maximum product. ExampleInput: [1,2,3]Output: 6 Note1.The length of the given array will be in range [3,10">
-<meta property="og:updated_time" content="2017-06-25T13:18:03.000Z">
+<meta property="og:description" content="DescriptionSuppose you have a long flowerbed in which some of the plots are planted and some are not. However, flowers cannot be planted in adjacent plots - they would compete for water and both would">
+<meta property="og:updated_time" content="2017-06-26T09:03:04.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【Leetcode】628. Maximum Product of Three Numbers">
-<meta name="twitter:description" content="DescriptionGiven an integer array, find three numbers whose product is maximum and output the maximum product. ExampleInput: [1,2,3]Output: 6 Note1.The length of the given array will be in range [3,10">
+<meta name="twitter:title" content="【Leetcode】605. Can Place Flowers">
+<meta name="twitter:description" content="DescriptionSuppose you have a long flowerbed in which some of the plots are planted and some are not. However, flowers cannot be planted in adjacent plots - they would compete for water and both would">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/06/25/maximumProductOfThreeNumbers/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/26/canPlaceFlowers/"/>
 
 
 
 
 
-  <title>【Leetcode】628. Maximum Product of Three Numbers | ChenZengze's Blog</title>
+  <title>【Leetcode】605. Can Place Flowers | ChenZengze's Blog</title>
   
 
 
@@ -254,7 +254,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/25/maximumProductOfThreeNumbers/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/26/canPlaceFlowers/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="陈曾泽">
@@ -271,7 +271,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【Leetcode】628. Maximum Product of Three Numbers</h1>
+          <h1 class="post-title" itemprop="name headline">【Leetcode】605. Can Place Flowers</h1>
         
 
         <div class="post-meta">
@@ -283,8 +283,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-25T21:04:08+08:00">
-                2017-06-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-26T16:54:47+08:00">
+                2017-06-26
               </time>
             
 
@@ -302,9 +302,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/06/25/maximumProductOfThreeNumbers/#comments" itemprop="discussionUrl">
+                <a href="/2017/06/26/canPlaceFlowers/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/06/25/maximumProductOfThreeNumbers/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/06/26/canPlaceFlowers/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -312,7 +312,7 @@
 
           
           
-             <span id="/2017/06/25/maximumProductOfThreeNumbers/" class="leancloud_visitors" data-flag-title="【Leetcode】628. Maximum Product of Three Numbers">
+             <span id="/2017/06/26/canPlaceFlowers/" class="leancloud_visitors" data-flag-title="【Leetcode】605. Can Place Flowers">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -340,14 +340,15 @@
       
 
       
-        <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given an integer array, find three numbers whose product is maximum and output the maximum product.</p>
-<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><p>Input: [1,2,3]<br>Output: 6</p>
-<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>1.The length of the given array will be in range [3,104] and all elements are in the range [-1000, 1000].<br>2.Multiplication of any three numbers in the input won’t exceed the range of 32-bit signed integer.</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxmiumProduct</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        Arrays.sort(nums);</div><div class="line"></div><div class="line">        <span class="keyword">int</span> posNum = <span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> negNum = <span class="number">0</span>;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</div><div class="line">            <span class="keyword">if</span> (nums[i] &gt; <span class="number">0</span>) &#123;</div><div class="line">                posNum++;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">if</span> (nums[i] &lt; <span class="number">0</span>) &#123;</div><div class="line">                negNum++;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">int</span> len = nums.length;</div><div class="line">        <span class="keyword">if</span> (len == <span class="number">3</span>) &#123;</div><div class="line">            <span class="keyword">return</span> nums[<span class="number">0</span>] * nums[<span class="number">1</span>] * nums[<span class="number">2</span>];</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">if</span> (nums[<span class="number">0</span>] &gt; <span class="number">0</span> || negNum &lt; <span class="number">2</span>) &#123;</div><div class="line">            <span class="keyword">return</span> nums[len - <span class="number">1</span>] * nums[len - <span class="number">2</span>] * nums[len - <span class="number">3</span>];</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">if</span> (negNum &gt;= <span class="number">2</span> &amp;&amp; posNum &lt;= <span class="number">2</span>) &#123;</div><div class="line">            <span class="keyword">return</span> nums[<span class="number">0</span>] * nums[<span class="number">1</span>] * nums[len - <span class="number">1</span>];</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">if</span> (negNum == <span class="number">2</span> &amp;&amp; posNum &gt; <span class="number">2</span>) &#123;</div><div class="line">            <span class="keyword">int</span> negProduct = nums[<span class="number">0</span>] * nums[<span class="number">1</span>];</div><div class="line">            <span class="keyword">int</span> posProduct = nums[len - <span class="number">1</span>] * nums[len - <span class="number">2</span>];</div><div class="line">            <span class="keyword">return</span> nums[len - <span class="number">3</span>] * Math.max(negProduct, posProduct);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">if</span> (negNum &gt; <span class="number">2</span> &amp;&amp; posNum &gt; <span class="number">2</span>) &#123;</div><div class="line">            <span class="keyword">return</span> Math.max(nums[<span class="number">0</span>] * nums[<span class="number">1</span>] * nums[len - <span class="number">1</span>], nums[len - <span class="number">1</span>] * nums[len - <span class="number">2</span>] * nums[len - <span class="number">3</span>]);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+        <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Suppose you have a long flowerbed in which some of the plots are planted and some are not. However, flowers cannot be planted in adjacent plots - they would compete for water and both would die.</p>
+<p>Given a flowerbed (represented as an array containing 0 and 1, where 0 means empty and 1 means not empty), and a number n, return if n new flowers can be planted in it without violating the no-adjacent-flowers rule.</p>
+<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><p>Input: flowerbed = [1,0,0,0,1], n = 1<br>Output: True</p>
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>1.The input array won’t violate no-adjacent-flowers rule.<br>2.The input array size is in the range of [1, 20000].<br>3.n is a non-negative integer which won’t exceed the input array size.</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><h2 id="First"><a href="#First" class="headerlink" title="First"></a>First</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">canPlaceFlowers</span><span class="params">(<span class="keyword">int</span>[] flowerbed, <span class="keyword">int</span> n)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> len = flowerbed.length;</div><div class="line">        List&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</div><div class="line">            <span class="keyword">if</span> (flowerbed[i] == <span class="number">1</span>) &#123;</div><div class="line">                count++;</div><div class="line">                list.add(i);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (n == <span class="number">0</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">if</span> (len == <span class="number">1</span> &amp;&amp; count == <span class="number">0</span> &amp;&amp; n == <span class="number">1</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">if</span> (count == <span class="number">0</span>) &#123;</div><div class="line">            <span class="keyword">return</span> (len + <span class="number">1</span>)/<span class="number">2</span> &gt;= n ? <span class="keyword">true</span> : <span class="keyword">false</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (count == <span class="number">1</span>) &#123;</div><div class="line">            <span class="comment">//list.get(0)/2 + (len - list.get(0) - 1)/2 = (len - 1)/2</span></div><div class="line">            <span class="keyword">int</span> first = list.get(<span class="number">0</span>)/<span class="number">2</span>;</div><div class="line">            <span class="keyword">int</span> second = (len - list.get(<span class="number">0</span>) - <span class="number">1</span>)/<span class="number">2</span>;</div><div class="line">            <span class="keyword">return</span> first + second &gt;= n ? <span class="keyword">true</span> : <span class="keyword">false</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (len - count &lt;= <span class="number">2</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">int</span> begin = <span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> available = <span class="number">0</span>;</div><div class="line">        <span class="keyword">if</span> (list.get(begin) &gt; <span class="number">1</span>) &#123;</div><div class="line">            available += list.get(begin)/<span class="number">2</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">while</span> (begin &lt; list.size() - <span class="number">1</span>) &#123;</div><div class="line">            <span class="keyword">if</span> (list.get(begin + <span class="number">1</span>) - list.get(begin) &gt;= <span class="number">4</span>) &#123;</div><div class="line">                <span class="keyword">int</span> interval = list.get(begin + <span class="number">1</span>) - list.get(begin) - <span class="number">1</span>;</div><div class="line">                <span class="keyword">if</span> (interval % <span class="number">2</span> == <span class="number">0</span>) &#123;</div><div class="line">                    available += interval/<span class="number">2</span> - <span class="number">1</span>;</div><div class="line">                &#125; <span class="keyword">else</span> &#123;</div><div class="line">                    available += interval/<span class="number">2</span>;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            begin++;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (list.get(list.size() - <span class="number">1</span>) != len - <span class="number">1</span>) &#123;</div><div class="line">            available += (len - list.get(list.size() - <span class="number">1</span>) - <span class="number">1</span>)/<span class="number">2</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> available &gt;= n ? <span class="keyword">true</span> : <span class="keyword">false</span>;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
 <h3 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h3><p>AC</p>
-<h3 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h3><p>用的很蠢的考虑所有边界情况的方法，没什么问题，就是要注意最后一个条件里的内容判断。</p>
-<h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maximumProduct</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        Arrays.sort(nums);</div><div class="line">        <span class="keyword">int</span> len = nums.length;</div><div class="line">        <span class="keyword">return</span> Math.max(nums[<span class="number">0</span>] * nums[<span class="number">1</span>] * nums[len - <span class="number">1</span>], nums[len - <span class="number">1</span>] * nums[len - <span class="number">2</span>] * nums[len - <span class="number">3</span>]);</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<h3 id="Analyse-1"><a href="#Analyse-1" class="headerlink" title="Analyse"></a>Analyse</h3><p>其实思路是一致的。</p>
+<h3 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h3><p>复杂度没问题，但是耗时太长，测了好多边界条件，而且在判断count==1的条件下，开始把list.get(0)/2 + (len - list.get(0) - 1)/2 = (len - 1)/2 直接加一起算，其实得分成两半，结果是会有差的。这个解法过于愚蠢。</p>
+<h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><h3 id="Idea"><a href="#Idea" class="headerlink" title="Idea"></a>Idea</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">canPlaceFlowers</span><span class="params">(<span class="keyword">int</span>[] flowerbed, <span class="keyword">int</span> n)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</div><div class="line">        <span class="keyword">while</span> (i &lt; flowerbed.length &amp;&amp; count &lt; n) &#123;</div><div class="line">            <span class="keyword">if</span> (flowerbed[i] == <span class="number">0</span>) &#123;</div><div class="line">                <span class="keyword">int</span> prev = i == <span class="number">0</span> ? <span class="number">0</span> : flowerbed[i - <span class="number">1</span>];</div><div class="line">                <span class="keyword">int</span> next = i == flowerbed.length - <span class="number">1</span> ? <span class="number">0</span> : flowerbed[i + <span class="number">1</span>];</div><div class="line">                <span class="keyword">if</span> (prev == <span class="number">0</span> &amp;&amp; next == <span class="number">0</span>) &#123;</div><div class="line">                    flowerbed[i] = <span class="number">1</span>;</div><div class="line">                    count++;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            i++;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> count == n;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h3 id="Analyse-1"><a href="#Analyse-1" class="headerlink" title="Analyse"></a>Analyse</h3><p>思路很清晰，开始想得count超过n不知道怎么在count==n的情况下就break，还是代码太不熟练，这个思路很清晰，一眼可以看出来，好解法，O(n)，代码行数少。</p>
 
       
     </div>
@@ -411,8 +412,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/25/taskScheduler/" rel="next" title="【Leetcode】621.Task Scheduler">
-                <i class="fa fa-chevron-left"></i> 【Leetcode】621.Task Scheduler
+              <a href="/2017/06/26/validTriangleNumber/" rel="next" title="【Leetcode】611. Valid Triangle Number">
+                <i class="fa fa-chevron-left"></i> 【Leetcode】611. Valid Triangle Number
               </a>
             
           </div>
@@ -420,10 +421,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/06/26/validTriangleNumber/" rel="prev" title="【Leetcode】611. Valid Triangle Number">
-                【Leetcode】611. Valid Triangle Number <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -579,7 +576,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-number">2.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Note"><span class="nav-number">3.</span> <span class="nav-text">Note</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">4.</span> <span class="nav-text">Solution</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Result"><span class="nav-number">4.1.</span> <span class="nav-text">Result</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Analyse"><span class="nav-number">4.2.</span> <span class="nav-text">Analyse</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Optimization"><span class="nav-number">5.</span> <span class="nav-text">Optimization</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Analyse-1"><span class="nav-number">5.1.</span> <span class="nav-text">Analyse</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-number">2.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Note"><span class="nav-number">3.</span> <span class="nav-text">Note</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">4.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#First"><span class="nav-number">5.</span> <span class="nav-text">First</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Result"><span class="nav-number">5.1.</span> <span class="nav-text">Result</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Analyse"><span class="nav-number">5.2.</span> <span class="nav-text">Analyse</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Optimization"><span class="nav-number">6.</span> <span class="nav-text">Optimization</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Idea"><span class="nav-number">6.1.</span> <span class="nav-text">Idea</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Analyse-1"><span class="nav-number">6.2.</span> <span class="nav-text">Analyse</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -734,9 +731,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/06/25/maximumProductOfThreeNumbers/';
-          this.page.identifier = '2017/06/25/maximumProductOfThreeNumbers/';
-          this.page.title = '【Leetcode】628. Maximum Product of Three Numbers';
+          this.page.url = 'http://yoursite.com/2017/06/26/canPlaceFlowers/';
+          this.page.identifier = '2017/06/26/canPlaceFlowers/';
+          this.page.title = '【Leetcode】605. Can Place Flowers';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://sirius.disqus.com/embed.js';
