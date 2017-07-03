@@ -91,17 +91,17 @@
 
 
 
-<meta name="description" content="DescriptionIn MATLAB, there is a very useful function called ‘reshape’, which can reshape a matrix into a new one with different size but keep its original data. You’re given a matrix represented by a">
+<meta name="description" content="DescriptionGiven an array of integers and an integer k, you need to find the number of unique k-diff pairs in the array. Here a k-diff pair is defined as an integer pair (i, j), where i and j are both">
 <meta name="keywords" content="leetcode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【Leetcode】 566. Reshape the Matrix">
-<meta property="og:url" content="http://yoursite.com/2017/06/28/reshapeTheMatrix/index.html">
+<meta property="og:title" content="【Leetcode】532. K-diff Pairs in an Array">
+<meta property="og:url" content="http://yoursite.com/2017/07/03/kDiffPairsInAnArray/index.html">
 <meta property="og:site_name" content="ChenZengze&#39;s Blog">
-<meta property="og:description" content="DescriptionIn MATLAB, there is a very useful function called ‘reshape’, which can reshape a matrix into a new one with different size but keep its original data. You’re given a matrix represented by a">
-<meta property="og:updated_time" content="2017-06-28T08:23:06.000Z">
+<meta property="og:description" content="DescriptionGiven an array of integers and an integer k, you need to find the number of unique k-diff pairs in the array. Here a k-diff pair is defined as an integer pair (i, j), where i and j are both">
+<meta property="og:updated_time" content="2017-07-03T08:17:21.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【Leetcode】 566. Reshape the Matrix">
-<meta name="twitter:description" content="DescriptionIn MATLAB, there is a very useful function called ‘reshape’, which can reshape a matrix into a new one with different size but keep its original data. You’re given a matrix represented by a">
+<meta name="twitter:title" content="【Leetcode】532. K-diff Pairs in an Array">
+<meta name="twitter:description" content="DescriptionGiven an array of integers and an integer k, you need to find the number of unique k-diff pairs in the array. Here a k-diff pair is defined as an integer pair (i, j), where i and j are both">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/06/28/reshapeTheMatrix/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/03/kDiffPairsInAnArray/"/>
 
 
 
 
 
-  <title>【Leetcode】 566. Reshape the Matrix | ChenZengze's Blog</title>
+  <title>【Leetcode】532. K-diff Pairs in an Array | ChenZengze's Blog</title>
   
 
 
@@ -254,7 +254,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/28/reshapeTheMatrix/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/03/kDiffPairsInAnArray/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="陈曾泽">
@@ -271,7 +271,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【Leetcode】 566. Reshape the Matrix</h1>
+          <h1 class="post-title" itemprop="name headline">【Leetcode】532. K-diff Pairs in an Array</h1>
         
 
         <div class="post-meta">
@@ -283,8 +283,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-28T16:07:13+08:00">
-                2017-06-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-03T16:12:41+08:00">
+                2017-07-03
               </time>
             
 
@@ -302,9 +302,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/06/28/reshapeTheMatrix/#comments" itemprop="discussionUrl">
+                <a href="/2017/07/03/kDiffPairsInAnArray/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/06/28/reshapeTheMatrix/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/07/03/kDiffPairsInAnArray/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -312,7 +312,7 @@
 
           
           
-             <span id="/2017/06/28/reshapeTheMatrix/" class="leancloud_visitors" data-flag-title="【Leetcode】 566. Reshape the Matrix">
+             <span id="/2017/07/03/kDiffPairsInAnArray/" class="leancloud_visitors" data-flag-title="【Leetcode】532. K-diff Pairs in an Array">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -340,15 +340,14 @@
       
 
       
-        <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>In MATLAB, there is a very useful function called ‘reshape’, which can reshape a matrix into a new one with different size but keep its original data.</p>
-<p>You’re given a matrix represented by a two-dimensional array, and two positive integers r and c representing the row number and column number of the wanted reshaped matrix, respectively.</p>
-<p>The reshaped matrix need to be filled with all the elements of the original matrix in the same row-traversing order as they were.</p>
-<p>If the ‘reshape’ operation with given parameters is possible and legal, output the new reshaped matrix; Otherwise, output the original matrix.</p>
-<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><p>Input:<br>nums =<br>[[1,2],<br> [3,4]]<br>r = 1, c = 4<br>Output:<br>[[1,2,3,4]]<br>Explanation:<br>The row-traversing of nums is [1,2,3,4]. The new reshaped matrix is a 1 * 4 matrix, fill it row by row by using the previous list.</p>
-<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>1.The height and width of the given matrix is in range [1, 100].<br>2.The given r and c are all positive.</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><h2 id="First"><a href="#First" class="headerlink" title="First"></a>First</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[][] matrixReshape(<span class="keyword">int</span>[][] nums, <span class="keyword">int</span> r, <span class="keyword">int</span> c) &#123;</div><div class="line">        <span class="keyword">int</span> size = nums.length * nums[<span class="number">0</span>].length;</div><div class="line">        <span class="keyword">int</span>[][] nums1 = <span class="keyword">new</span> <span class="keyword">int</span>[r][c];</div><div class="line">        <span class="keyword">if</span> (size != r * c) &#123;</div><div class="line">            <span class="keyword">return</span> nums;</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            <span class="keyword">int</span>[] trans = <span class="keyword">new</span> <span class="keyword">int</span>[size];</div><div class="line">            <span class="keyword">int</span> n = <span class="number">0</span>;</div><div class="line">            <span class="keyword">while</span> (n &lt; size) &#123;</div><div class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</div><div class="line">                    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; nums[<span class="number">0</span>].length; j++) &#123;</div><div class="line">                        trans[n] = nums[i][j];</div><div class="line">                        n++;</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">int</span> m = <span class="number">0</span>;</div><div class="line">            <span class="keyword">while</span> (m &lt; size) &#123;</div><div class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; r; i++) &#123;</div><div class="line">                    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; c; j++) &#123;</div><div class="line">                        nums1[i][j] = trans[m];</div><div class="line">                        m++;</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> nums1;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">int</span>[][] matrixReshape(<span class="keyword">int</span>[][] nums, <span class="keyword">int</span> r, <span class="keyword">int</span> c) &#123;</div><div class="line">        <span class="keyword">if</span> (nums.length * nums[<span class="number">0</span>].length != r * c) &#123;</div><div class="line">            <span class="keyword">return</span> nums;</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            <span class="keyword">int</span>[][] nums1 = <span class="keyword">new</span> <span class="keyword">int</span>[r][c];</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; r * c; i++) &#123;</div><div class="line">                nums1[i/c][i%c] = nums[i/nums[<span class="number">0</span>].length][i%nums[<span class="number">0</span>].length];</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">return</span> nums1;</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>开始不想写这道题，但是发现自己做这道题的速度还是不够快，用了一个很愚蠢的转储方法，复杂度到了O(n^3)，其实完全不至于，这种代码很容易成为大题的一小部分，如果这部分写的这么慢，大题不要想顺利做完了。</p>
+        <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given an array of integers and an integer k, you need to find the number of unique k-diff pairs in the array. Here a k-diff pair is defined as an integer pair (i, j), where i and j are both numbers in the array and their absolute difference is k.</p>
+<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><p>Given an array of integers and an integer k, you need to find the number of unique k-diff pairs in the array. Here a k-diff pair is defined as an integer pair (i, j), where i and j are both numbers in the array and their absolute difference is k.</p>
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>1.The pairs (i, j) and (j, i) count as the same pair.<br>2.The length of the array won’t exceed 10,000.<br>3.All the integers in the given input belong to the range: [-1e7, 1e7].</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">findPairs</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> k)</span> </span>&#123;</div><div class="line">        Arrays.sort(nums);</div><div class="line">        <span class="keyword">int</span> len = nums.length;</div><div class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len;) &#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; len;) &#123;</div><div class="line">                <span class="keyword">if</span> (nums[j] - nums[i] == k) &#123;</div><div class="line">                    count++;</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">int</span> n = <span class="number">1</span>;</div><div class="line">                <span class="keyword">while</span> (j + n &lt; len &amp;&amp; nums[j + n] == nums[j]) &#123;</div><div class="line">                    n++;</div><div class="line">                &#125;</div><div class="line">                j += n;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">int</span> m = <span class="number">1</span>;</div><div class="line">            <span class="keyword">while</span> (i + m &lt; len &amp;&amp; nums[i + m] == nums[i]) &#123;</div><div class="line">                m++;</div><div class="line">            &#125;</div><div class="line">            i += m;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> count;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h3 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h3><p>AC</p>
+<h3 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h3><p>思路简单，复杂度O(n^2)，但是过了test case，问题不大。</p>
+<h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">findPairs</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> k)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (nums == <span class="keyword">null</span> || nums.length == <span class="number">0</span> || k &lt; <span class="number">0</span>)   <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</div><div class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> len = nums.length;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i : nums) &#123;</div><div class="line">            map.put(i, map.getOrDefault(i, <span class="number">0</span>) + <span class="number">1</span>);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">for</span> (Map.Entry&lt;Integer, Integer&gt; entry : map.entrySet()) &#123;</div><div class="line">            <span class="keyword">if</span> (k == <span class="number">0</span>) &#123;</div><div class="line">                <span class="keyword">if</span> (entry.getValue() &gt;= <span class="number">2</span>) &#123;</div><div class="line">                    count++;</div><div class="line">                &#125;</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                <span class="keyword">if</span> (map.containsKey(entry.getKey() + k)) &#123;</div><div class="line">                    count++;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> count;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h3 id="Analyse-1"><a href="#Analyse-1" class="headerlink" title="Analyse"></a>Analyse</h3><p>复杂度变为了O(n)，要习惯写map。</p>
 
       
     </div>
@@ -412,8 +411,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/27/shortestUnsortedContinuousSubarray/" rel="next" title="【Leetcode】581. Shortest Unsorted Continuous Subarray">
-                <i class="fa fa-chevron-left"></i> 【Leetcode】581. Shortest Unsorted Continuous Subarray
+              <a href="/2017/06/30/arrayNesting/" rel="next" title="【Leetcode】565. Array Nesting">
+                <i class="fa fa-chevron-left"></i> 【Leetcode】565. Array Nesting
               </a>
             
           </div>
@@ -421,10 +420,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/06/30/arrayNesting/" rel="prev" title="【Leetcode】565. Array Nesting">
-                【Leetcode】565. Array Nesting <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -580,7 +575,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-number">2.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Note"><span class="nav-number">3.</span> <span class="nav-text">Note</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">4.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#First"><span class="nav-number">5.</span> <span class="nav-text">First</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Optimization"><span class="nav-number">6.</span> <span class="nav-text">Optimization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Summary"><span class="nav-number">7.</span> <span class="nav-text">Summary</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-number">2.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Note"><span class="nav-number">3.</span> <span class="nav-text">Note</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">4.</span> <span class="nav-text">Solution</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Result"><span class="nav-number">4.1.</span> <span class="nav-text">Result</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Analyse"><span class="nav-number">4.2.</span> <span class="nav-text">Analyse</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Optimization"><span class="nav-number">5.</span> <span class="nav-text">Optimization</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Analyse-1"><span class="nav-number">5.1.</span> <span class="nav-text">Analyse</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -735,9 +730,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/06/28/reshapeTheMatrix/';
-          this.page.identifier = '2017/06/28/reshapeTheMatrix/';
-          this.page.title = '【Leetcode】 566. Reshape the Matrix';
+          this.page.url = 'http://yoursite.com/2017/07/03/kDiffPairsInAnArray/';
+          this.page.identifier = '2017/07/03/kDiffPairsInAnArray/';
+          this.page.title = '【Leetcode】532. K-diff Pairs in an Array';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://sirius.disqus.com/embed.js';
