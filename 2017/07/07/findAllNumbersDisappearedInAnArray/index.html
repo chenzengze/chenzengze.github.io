@@ -91,17 +91,17 @@
 
 
 
-<meta name="description" content="DescriptionGiven an integer array, you need to find one continuous subarray that if you only sort this subarray in ascending order, then the whole array will be sorted in ascending order, too. You nee">
+<meta name="description" content="DescriptionGiven an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once. Find all the elements of [1, n] inclusive that do not appear in this ar">
 <meta name="keywords" content="leetcode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【Leetcode】581. Shortest Unsorted Continuous Subarray">
-<meta property="og:url" content="http://yoursite.com/2017/06/27/shortestUnsortedContinuousSubarray/index.html">
+<meta property="og:title" content="【Leetcode】 448. Find All Numbers Disappeared in an Array">
+<meta property="og:url" content="http://yoursite.com/2017/07/07/findAllNumbersDisappearedInAnArray/index.html">
 <meta property="og:site_name" content="ChenZengze&#39;s Blog">
-<meta property="og:description" content="DescriptionGiven an integer array, you need to find one continuous subarray that if you only sort this subarray in ascending order, then the whole array will be sorted in ascending order, too. You nee">
-<meta property="og:updated_time" content="2017-06-27T09:02:55.000Z">
+<meta property="og:description" content="DescriptionGiven an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once. Find all the elements of [1, n] inclusive that do not appear in this ar">
+<meta property="og:updated_time" content="2017-07-07T01:53:51.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【Leetcode】581. Shortest Unsorted Continuous Subarray">
-<meta name="twitter:description" content="DescriptionGiven an integer array, you need to find one continuous subarray that if you only sort this subarray in ascending order, then the whole array will be sorted in ascending order, too. You nee">
+<meta name="twitter:title" content="【Leetcode】 448. Find All Numbers Disappeared in an Array">
+<meta name="twitter:description" content="DescriptionGiven an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once. Find all the elements of [1, n] inclusive that do not appear in this ar">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/06/27/shortestUnsortedContinuousSubarray/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/07/findAllNumbersDisappearedInAnArray/"/>
 
 
 
 
 
-  <title>【Leetcode】581. Shortest Unsorted Continuous Subarray | ChenZengze's Blog</title>
+  <title>【Leetcode】 448. Find All Numbers Disappeared in an Array | ChenZengze's Blog</title>
   
 
 
@@ -254,7 +254,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/27/shortestUnsortedContinuousSubarray/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/07/findAllNumbersDisappearedInAnArray/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="陈曾泽">
@@ -271,7 +271,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【Leetcode】581. Shortest Unsorted Continuous Subarray</h1>
+          <h1 class="post-title" itemprop="name headline">【Leetcode】 448. Find All Numbers Disappeared in an Array</h1>
         
 
         <div class="post-meta">
@@ -283,8 +283,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-27T16:46:51+08:00">
-                2017-06-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-07T09:39:18+08:00">
+                2017-07-07
               </time>
             
 
@@ -302,9 +302,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/06/27/shortestUnsortedContinuousSubarray/#comments" itemprop="discussionUrl">
+                <a href="/2017/07/07/findAllNumbersDisappearedInAnArray/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/06/27/shortestUnsortedContinuousSubarray/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/07/07/findAllNumbersDisappearedInAnArray/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -312,7 +312,7 @@
 
           
           
-             <span id="/2017/06/27/shortestUnsortedContinuousSubarray/" class="leancloud_visitors" data-flag-title="【Leetcode】581. Shortest Unsorted Continuous Subarray">
+             <span id="/2017/07/07/findAllNumbersDisappearedInAnArray/" class="leancloud_visitors" data-flag-title="【Leetcode】 448. Find All Numbers Disappeared in an Array">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -340,19 +340,15 @@
       
 
       
-        <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given an integer array, you need to find one continuous subarray that if you only sort this subarray in ascending order, then the whole array will be sorted in ascending order, too.</p>
-<p>You need to find the shortest such subarray and output its length.</p>
-<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><p>Input: [2, 6, 4, 8, 10, 9, 15]<br>Output: 5<br>Explanation: You need to sort [6, 4, 8, 10, 9] in ascending order to make the whole array sorted in ascending order.</p>
-<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>1.Then length of the input array is in range [1, 10,000].<br>2.The input array may contain duplicates, so ascending order here means &lt;=.</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><h2 id="First"><a href="#First" class="headerlink" title="First"></a>First</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">findUnsortedSubarray</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</div><div class="line">            map.put(i, nums[i]);</div><div class="line">        &#125;</div><div class="line">        Arrays.sort(nums);</div><div class="line">        Map&lt;Integer, Integer&gt; map1 = <span class="keyword">new</span> HashMap&lt;&gt;();</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; nums.length; j++) &#123;</div><div class="line">            map1.put(j, nums[j]);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">int</span> n = <span class="number">0</span>;</div><div class="line">        <span class="keyword">while</span> (n &lt; map.size() &amp;&amp; map.get(n).equals(map1.get(n))) &#123;</div><div class="line">        <span class="comment">//while (map.get(n).equals(map1.get(n)) &amp;&amp; n &lt; map.size()) &#123;</span></div><div class="line">            n++;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">if</span> (nums.length &gt; n + <span class="number">1</span>) &#123;</div><div class="line">            <span class="keyword">int</span> m = nums.length - <span class="number">1</span>;</div><div class="line">            <span class="keyword">int</span> count = <span class="number">0</span>;</div><div class="line">            <span class="keyword">while</span> ( m &gt;= <span class="number">0</span> &amp;&amp; map.get(m).equals(map1.get(m))) &#123;</div><div class="line">                m--;</div><div class="line">                count++;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">return</span> nums.length - n - count;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> nums.length - n;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+        <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.</p>
+<p>Find all the elements of [1, n] inclusive that do not appear in this array.</p>
+<p>Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.</p>
+<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><p>Input:[4,3,2,7,8,2,3,1]<br>Output:[5,6]</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">findDisappearedNumbers</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        Arrays.sort(nums);</div><div class="line">        <span class="keyword">int</span> len = nums.length;</div><div class="line">        List&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</div><div class="line">        <span class="keyword">if</span> (nums == <span class="keyword">null</span> || nums.length == <span class="number">0</span>) &#123;</div><div class="line">            <span class="keyword">return</span> list;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (nums[<span class="number">0</span>] &gt; <span class="number">1</span>) &#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> n = <span class="number">1</span>; n &lt; nums[<span class="number">0</span>]; n++) &#123;</div><div class="line">                list.add(n);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len - <span class="number">1</span>; i++) &#123;</div><div class="line">            <span class="keyword">if</span> (nums[i] &lt; nums[i + <span class="number">1</span>]) &#123;</div><div class="line">                <span class="keyword">if</span> (nums[i + <span class="number">1</span>] - nums[i] &gt; <span class="number">1</span>) &#123;</div><div class="line">                    <span class="keyword">for</span> (<span class="keyword">int</span> j = nums[i] + <span class="number">1</span>; j &lt; nums[i + <span class="number">1</span>]; j++) &#123;</div><div class="line">                        list.add(j);</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (nums[len - <span class="number">1</span>] &lt; len) &#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> m = nums[len - <span class="number">1</span>] + <span class="number">1</span>; m &lt;= len; m++) &#123;</div><div class="line">                list.add(m);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> list;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
 <h3 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h3><p>AC</p>
-<h3 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h3><p>就是两个map往中间减，然后统计个数，但是有几个需要总结的点。在最后写出。</p>
-<h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><h3 id="First-1"><a href="#First-1" class="headerlink" title="First"></a>First</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">findUnsortedSubarray</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> len = nums.length;</div><div class="line">        <span class="keyword">int</span> max = nums[<span class="number">0</span>];</div><div class="line">        <span class="keyword">int</span> min = nums[len - <span class="number">1</span>];</div><div class="line">        <span class="keyword">int</span> end = -<span class="number">2</span>;</div><div class="line">        <span class="keyword">int</span> begin = -<span class="number">1</span>;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; len; i++) &#123;</div><div class="line">            max = Math.max(max, nums[i]);</div><div class="line">            min = Math.min(min, nums[len - <span class="number">1</span> - i]);</div><div class="line">            <span class="keyword">if</span> (max &gt; nums[i]) &#123;</div><div class="line">                end = i;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">if</span> (min &lt; nums[len - <span class="number">1</span> - i]) &#123;</div><div class="line">                begin = len - <span class="number">1</span> - i;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> end - begin + <span class="number">1</span>;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<h4 id="Analyse-1"><a href="#Analyse-1" class="headerlink" title="Analyse"></a>Analyse</h4><p>这个就是两边一直推，左边开始一直判断max，右边开始一直判断min，如果max或者min一直是边界值，那么刚好走到最后判断0，否则就确定要切割的边界。这里很取巧的办法就是从index小的开始判断max，从index大的开始判断min，这样O(n)思路清晰，一气呵成。</p>
-<h3 id="Second"><a href="#Second" class="headerlink" title="Second"></a>Second</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">findUnsortedSubarray_</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> len = nums.length;</div><div class="line">        <span class="keyword">int</span>[] temp = nums.clone();</div><div class="line">        Arrays.sort(temp);</div><div class="line">        <span class="keyword">int</span> start = <span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> end = nums.length - <span class="number">1</span>;</div><div class="line">        <span class="keyword">while</span> (start &lt; len &amp;&amp; nums[start] == temp[start]) &#123;</div><div class="line">            start++;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">while</span> (end &gt; start &amp;&amp; nums[end] == temp[end]) &#123;</div><div class="line">            end--;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> end - start + <span class="number">1</span>;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<h4 id="Analyse-2"><a href="#Analyse-2" class="headerlink" title="Analyse"></a>Analyse</h4><p>这个就是我的解法的简化版本，这里需要注意的是第二个while里，直接加上判断是end&gt;start而不是end&gt;0之类，这样可以避免多算边界，很简单。</p>
-<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>这里需要提醒自己的是日常代码的解法，一定要想清楚&gt;和&gt;=的不同，而且i+1和i的对于边界区别，不然很容易出现越界。<br>Map的书写过程中注释的那一行是<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">while</span> (map.get(n).equals(map1.get(n)) &amp;&amp; n &lt; map.size()) &#123;</div></pre></td></tr></table></figure></p>
-<p>这一行之所以要标注出来，有两点，一个是这个判断条件即使失败，也会先走map.get(n).equals(map1.get(n))这步，如果没有这个key，很容易报NullPointerException，所以一定要把n&lt;map.size()写在前面。<br>细节决定成败。</p>
+<h3 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h3><p>思路还是一个数一个数的比较，但是很容易出现特殊情况没有考虑到，其实不适合bug free的写法，因为边界需要特殊的再标注。</p>
+<h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">findDisappearedNumbers</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        List&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</div><div class="line">            <span class="keyword">int</span> index = Math.abs(nums[i]) - <span class="number">1</span>;</div><div class="line">            <span class="keyword">if</span> (nums[index] &gt; <span class="number">0</span>) &#123;</div><div class="line">                nums[index] *= (-<span class="number">1</span>);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</div><div class="line">            <span class="keyword">if</span> (nums[i] &gt; <span class="number">0</span>) &#123;</div><div class="line">                list.add(i + <span class="number">1</span>);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> list;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h3 id="Idea"><a href="#Idea" class="headerlink" title="Idea"></a>Idea</h3><p>这个思路很好，其实按照Description来说，应该就是1， 2， 3， 4， …. n的一个排序，所以每次根据num[i]来找对应的index，中间也就就相差了1，将index对应的数字取反，那样就相当于有了一个标志了，这里要注意，可能后面的次序对应的i已经被取反，但这个index存的数还是有意义，所以要使用Math.abs来操作。然后最后进行一次判断是否大于0，说明这个index对应的没有被取，拿出来就好了。</p>
 
       
     </div>
@@ -416,8 +412,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/26/canPlaceFlowers/" rel="next" title="【Leetcode】605. Can Place Flowers">
-                <i class="fa fa-chevron-left"></i> 【Leetcode】605. Can Place Flowers
+              <a href="/2017/07/04/maxConsecutiveOnes/" rel="next" title="【Leetcode】485. Max Consecutive Ones">
+                <i class="fa fa-chevron-left"></i> 【Leetcode】485. Max Consecutive Ones
               </a>
             
           </div>
@@ -425,10 +421,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/06/28/reshapeTheMatrix/" rel="prev" title="【Leetcode】 566. Reshape the Matrix">
-                【Leetcode】 566. Reshape the Matrix <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -584,7 +576,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-number">2.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Note"><span class="nav-number">3.</span> <span class="nav-text">Note</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">4.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#First"><span class="nav-number">5.</span> <span class="nav-text">First</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Result"><span class="nav-number">5.1.</span> <span class="nav-text">Result</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Analyse"><span class="nav-number">5.2.</span> <span class="nav-text">Analyse</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Optimization"><span class="nav-number">6.</span> <span class="nav-text">Optimization</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#First-1"><span class="nav-number">6.1.</span> <span class="nav-text">First</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Analyse-1"><span class="nav-number">6.1.1.</span> <span class="nav-text">Analyse</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Second"><span class="nav-number">6.2.</span> <span class="nav-text">Second</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Analyse-2"><span class="nav-number">6.2.1.</span> <span class="nav-text">Analyse</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Summary"><span class="nav-number">7.</span> <span class="nav-text">Summary</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-number">2.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Result"><span class="nav-number">3.1.</span> <span class="nav-text">Result</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Analyse"><span class="nav-number">3.2.</span> <span class="nav-text">Analyse</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Optimization"><span class="nav-number">4.</span> <span class="nav-text">Optimization</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Idea"><span class="nav-number">4.1.</span> <span class="nav-text">Idea</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -739,9 +731,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/06/27/shortestUnsortedContinuousSubarray/';
-          this.page.identifier = '2017/06/27/shortestUnsortedContinuousSubarray/';
-          this.page.title = '【Leetcode】581. Shortest Unsorted Continuous Subarray';
+          this.page.url = 'http://yoursite.com/2017/07/07/findAllNumbersDisappearedInAnArray/';
+          this.page.identifier = '2017/07/07/findAllNumbersDisappearedInAnArray/';
+          this.page.title = '【Leetcode】 448. Find All Numbers Disappeared in an Array';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://sirius.disqus.com/embed.js';
