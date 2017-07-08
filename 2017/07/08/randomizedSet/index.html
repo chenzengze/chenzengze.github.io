@@ -91,17 +91,17 @@
 
 
 
-<meta name="description" content="DescriptionGiven an array consists of non-negative integers, your task is to count the number of triplets chosen from the array that can make triangles if we take them as side lengths of a triangle. E">
+<meta name="description" content="DescriptionDesign a data structure that supports all following operations in average O(1) time.1.insert(val): Inserts an item val to the set if not already present.2.remove(val): Removes an item val f">
 <meta name="keywords" content="leetcode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【Leetcode】611. Valid Triangle Number">
-<meta property="og:url" content="http://yoursite.com/2017/06/26/validTriangleNumber/index.html">
+<meta property="og:title" content="【Leetcode】380. Insert Delete GetRandom O(1)">
+<meta property="og:url" content="http://yoursite.com/2017/07/08/randomizedSet/index.html">
 <meta property="og:site_name" content="ChenZengze&#39;s Blog">
-<meta property="og:description" content="DescriptionGiven an array consists of non-negative integers, your task is to count the number of triplets chosen from the array that can make triangles if we take them as side lengths of a triangle. E">
-<meta property="og:updated_time" content="2017-06-26T09:04:22.000Z">
+<meta property="og:description" content="DescriptionDesign a data structure that supports all following operations in average O(1) time.1.insert(val): Inserts an item val to the set if not already present.2.remove(val): Removes an item val f">
+<meta property="og:updated_time" content="2017-07-08T09:18:18.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【Leetcode】611. Valid Triangle Number">
-<meta name="twitter:description" content="DescriptionGiven an array consists of non-negative integers, your task is to count the number of triplets chosen from the array that can make triangles if we take them as side lengths of a triangle. E">
+<meta name="twitter:title" content="【Leetcode】380. Insert Delete GetRandom O(1)">
+<meta name="twitter:description" content="DescriptionDesign a data structure that supports all following operations in average O(1) time.1.insert(val): Inserts an item val to the set if not already present.2.remove(val): Removes an item val f">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/06/26/validTriangleNumber/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/08/randomizedSet/"/>
 
 
 
 
 
-  <title>【Leetcode】611. Valid Triangle Number | ChenZengze's Blog</title>
+  <title>【Leetcode】380. Insert Delete GetRandom O(1) | ChenZengze's Blog</title>
   
 
 
@@ -254,7 +254,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/26/validTriangleNumber/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/08/randomizedSet/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="陈曾泽">
@@ -271,7 +271,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【Leetcode】611. Valid Triangle Number</h1>
+          <h1 class="post-title" itemprop="name headline">【Leetcode】380. Insert Delete GetRandom O(1)</h1>
         
 
         <div class="post-meta">
@@ -283,8 +283,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-26T10:54:52+08:00">
-                2017-06-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-08T17:08:15+08:00">
+                2017-07-08
               </time>
             
 
@@ -302,9 +302,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/06/26/validTriangleNumber/#comments" itemprop="discussionUrl">
+                <a href="/2017/07/08/randomizedSet/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/06/26/validTriangleNumber/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/07/08/randomizedSet/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -312,7 +312,7 @@
 
           
           
-             <span id="/2017/06/26/validTriangleNumber/" class="leancloud_visitors" data-flag-title="【Leetcode】611. Valid Triangle Number">
+             <span id="/2017/07/08/randomizedSet/" class="leancloud_visitors" data-flag-title="【Leetcode】380. Insert Delete GetRandom O(1)">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -340,15 +340,10 @@
       
 
       
-        <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given an array consists of non-negative integers, your task is to count the number of triplets chosen from the array that can make triangles if we take them as side lengths of a triangle.</p>
-<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><p>Input: [2,2,3,4]<br>Output: 3<br>Explanation:<br>Valid combinations are:<br>2,3,4 (using the first 2)<br>2,3,4 (using the second 2)<br>2,2,3</p>
-<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>1.The length of the given array won’t exceed 1000.<br>2.The integers in the given array are in the range of [0, 1000].</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><h2 id="First"><a href="#First" class="headerlink" title="First"></a>First</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">triangleNumber</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        Arrays.sort(nums);</div><div class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</div><div class="line">            <span class="keyword">int</span> first = nums[i];</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; nums.length; j++) &#123;</div><div class="line">                <span class="keyword">int</span> second = nums[j];</div><div class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> m = j + <span class="number">1</span>; m &lt; nums.length; m++) &#123;</div><div class="line">                    <span class="keyword">int</span> third = nums[m];</div><div class="line">                    <span class="keyword">if</span> (third &gt;= first + second) &#123;</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                    &#125; <span class="keyword">else</span> &#123;</div><div class="line">                        count++;</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> count;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<h3 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h3><p>AC</p>
-<h3 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h3><p>Brute force方法，复杂度撑到了O(n^3)。</p>
-<h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">triangleNumber</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        Arrays.sort(nums);</div><div class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> len = nums.length;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = len - <span class="number">1</span>; i &gt; <span class="number">1</span>; i--) &#123;</div><div class="line">            <span class="keyword">int</span> l = <span class="number">0</span>;</div><div class="line">            <span class="keyword">int</span> r = i - <span class="number">1</span>;</div><div class="line">            <span class="keyword">while</span> (l &lt; r) &#123;</div><div class="line">                <span class="keyword">if</span> (nums[l] + nums[r] &gt; nums[i]) &#123;</div><div class="line">                    count += r - l;</div><div class="line">                    r--;</div><div class="line">                &#125; <span class="keyword">else</span> &#123;</div><div class="line">                    l++;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> count;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<h3 id="Idea"><a href="#Idea" class="headerlink" title="Idea"></a>Idea</h3><p>这个思路就是界定边界，左边从0开始，右边从len-2开始，i从len-1开始，如果这个时候满足了nums[l]+nums[r]&gt;nums[i]，那必然l从现在的index到r-1的index配合现在的r和i，都满足构成三角形的条件，复杂度降到了O(n^2)。</p>
-<h3 id="Analyse-1"><a href="#Analyse-1" class="headerlink" title="Analyse"></a>Analyse</h3><p>暂时没有发现更低复杂度解法。</p>
+        <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Design a data structure that supports all following operations in average O(1) time.<br>1.insert(val): Inserts an item val to the set if not already present.<br>2.remove(val): Removes an item val from the set if present.<br>3.getRandom: Returns a random element from current set of elements. Each element must have the same probability of being returned.</p>
+<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Init an empty set.</span></div><div class="line">RandomizedSet randomSet = <span class="keyword">new</span> RandomizedSet();</div><div class="line"></div><div class="line"><span class="comment">// Inserts 1 to the set. Returns true as 1 was inserted successfully.</span></div><div class="line">randomSet.insert(<span class="number">1</span>);</div><div class="line"></div><div class="line"><span class="comment">// Returns false as 2 does not exist in the set.</span></div><div class="line">randomSet.remove(<span class="number">2</span>);</div><div class="line"></div><div class="line"><span class="comment">// Inserts 2 to the set, returns true. Set now contains [1,2].</span></div><div class="line">randomSet.insert(<span class="number">2</span>);</div><div class="line"></div><div class="line"><span class="comment">// getRandom should return either 1 or 2 randomly.</span></div><div class="line">randomSet.getRandom();</div><div class="line"></div><div class="line"><span class="comment">// Removes 1 from the set, returns true. Set now contains [2].</span></div><div class="line">randomSet.remove(<span class="number">1</span>);</div><div class="line"></div><div class="line"><span class="comment">// 2 was already in the set, so return false.</span></div><div class="line">randomSet.insert(<span class="number">2</span>);</div><div class="line"></div><div class="line"><span class="comment">// Since 2 is the only number in the set, getRandom always return 2.</span></div><div class="line">randomSet.getRandom();</div></pre></td></tr></table></figure>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RandomizedSet</span> </span>&#123;</div><div class="line"></div><div class="line">    List&lt;Integer&gt; nums;</div><div class="line">    HashMap&lt;Integer, Integer&gt; map;</div><div class="line">    java.util.Random rand = <span class="keyword">new</span> java.util.Random();</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">RandomizedSet</span><span class="params">()</span> </span>&#123;</div><div class="line">        nums = <span class="keyword">new</span> ArrayList&lt;&gt;();</div><div class="line">        map = <span class="keyword">new</span> HashMap&lt;&gt;();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> val)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (nums.contains(val)) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">        &#125;</div><div class="line">        map.put(val, nums.size());</div><div class="line">        nums.add(val);</div><div class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">remove</span><span class="params">(<span class="keyword">int</span> val)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (!nums.contains(val)) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (map.get(val) &lt; nums.size() - <span class="number">1</span>) &#123;</div><div class="line">            <span class="comment">//not end, transfer to end</span></div><div class="line">            <span class="keyword">int</span> lastone = nums.get(nums.size() - <span class="number">1</span>);</div><div class="line">            nums.set(map.get(val), lastone);</div><div class="line">            map.put(lastone, map.get(val));</div><div class="line">        &#125;</div><div class="line">        nums.remove(nums.size() - <span class="number">1</span>);</div><div class="line">        map.remove(val);</div><div class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getRandom</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> nums.get(rand.nextInt(nums.size()));</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h2><p>以前都不太会做这种题，今天仔细想了一下，还是参考了答案写出来。这种来就类似于在面试的时候给你两个队列来实现栈之类的问题，我记得美团和头条都有问过类似的问题，每次都被恶心到了。这里需要的确实是要把每个函数写的很完整没有一点bug。<br>开始认为可以只使用nums，因为getRandom和insert都只用nums都可以，但是delete就不行，因为nums的remove有问题，因为题目要求的复杂度是O(1)，你如果不是最后的数字的话，肯定需要遍历list，这样复杂度就不是O(1)了，所以加一个hashmap一点问题都没有。</p>
 
       
     </div>
@@ -412,8 +407,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/25/maximumProductOfThreeNumbers/" rel="next" title="【Leetcode】628. Maximum Product of Three Numbers">
-                <i class="fa fa-chevron-left"></i> 【Leetcode】628. Maximum Product of Three Numbers
+              <a href="/2017/07/07/thirdMaximumNumber/" rel="next" title="【Leetcode】414. Third Maximum Number">
+                <i class="fa fa-chevron-left"></i> 【Leetcode】414. Third Maximum Number
               </a>
             
           </div>
@@ -421,10 +416,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/06/26/canPlaceFlowers/" rel="prev" title="【Leetcode】605. Can Place Flowers">
-                【Leetcode】605. Can Place Flowers <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -580,7 +571,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-number">2.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Note"><span class="nav-number">3.</span> <span class="nav-text">Note</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">4.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#First"><span class="nav-number">5.</span> <span class="nav-text">First</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Result"><span class="nav-number">5.1.</span> <span class="nav-text">Result</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Analyse"><span class="nav-number">5.2.</span> <span class="nav-text">Analyse</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Optimization"><span class="nav-number">6.</span> <span class="nav-text">Optimization</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Idea"><span class="nav-number">6.1.</span> <span class="nav-text">Idea</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Analyse-1"><span class="nav-number">6.2.</span> <span class="nav-text">Analyse</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-number">2.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Analyse"><span class="nav-number">4.</span> <span class="nav-text">Analyse</span></a></li></ol></div>
             
 
           </div>
@@ -735,9 +726,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/06/26/validTriangleNumber/';
-          this.page.identifier = '2017/06/26/validTriangleNumber/';
-          this.page.title = '【Leetcode】611. Valid Triangle Number';
+          this.page.url = 'http://yoursite.com/2017/07/08/randomizedSet/';
+          this.page.identifier = '2017/07/08/randomizedSet/';
+          this.page.title = '【Leetcode】380. Insert Delete GetRandom O(1)';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://sirius.disqus.com/embed.js';
