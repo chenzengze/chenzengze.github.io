@@ -91,17 +91,17 @@
 
 
 
-<meta name="description" content="DescriptionAccording to the Wikipedia’s article: “The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.” Given a board w">
+<meta name="description" content="DescriptionGiven an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times. The algorithm should run in linear time and in O(1) space. Solution12345678910111213141516public Lis">
 <meta name="keywords" content="leetcode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【Leetcode】289. Game of Life">
-<meta property="og:url" content="http://yoursite.com/2017/07/13/gameOfLife/index.html">
+<meta property="og:title" content="【Leetcode】229. Majority Element II">
+<meta property="og:url" content="http://yoursite.com/2017/08/02/majorityElementII/index.html">
 <meta property="og:site_name" content="ChenZengze&#39;s Blog">
-<meta property="og:description" content="DescriptionAccording to the Wikipedia’s article: “The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.” Given a board w">
-<meta property="og:updated_time" content="2017-07-13T11:04:09.000Z">
+<meta property="og:description" content="DescriptionGiven an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times. The algorithm should run in linear time and in O(1) space. Solution12345678910111213141516public Lis">
+<meta property="og:updated_time" content="2017-08-02T05:44:43.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【Leetcode】289. Game of Life">
-<meta name="twitter:description" content="DescriptionAccording to the Wikipedia’s article: “The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.” Given a board w">
+<meta name="twitter:title" content="【Leetcode】229. Majority Element II">
+<meta name="twitter:description" content="DescriptionGiven an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times. The algorithm should run in linear time and in O(1) space. Solution12345678910111213141516public Lis">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/07/13/gameOfLife/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/02/majorityElementII/"/>
 
 
 
 
 
-  <title>【Leetcode】289. Game of Life | ChenZengze's Blog</title>
+  <title>【Leetcode】229. Majority Element II | ChenZengze's Blog</title>
   
 
 
@@ -254,7 +254,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/13/gameOfLife/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/02/majorityElementII/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="陈曾泽">
@@ -271,7 +271,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【Leetcode】289. Game of Life</h1>
+          <h1 class="post-title" itemprop="name headline">【Leetcode】229. Majority Element II</h1>
         
 
         <div class="post-meta">
@@ -283,8 +283,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-13T18:57:04+08:00">
-                2017-07-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-02T13:19:40+08:00">
+                2017-08-02
               </time>
             
 
@@ -302,9 +302,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/07/13/gameOfLife/#comments" itemprop="discussionUrl">
+                <a href="/2017/08/02/majorityElementII/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/07/13/gameOfLife/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/08/02/majorityElementII/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -312,7 +312,7 @@
 
           
           
-             <span id="/2017/07/13/gameOfLife/" class="leancloud_visitors" data-flag-title="【Leetcode】289. Game of Life">
+             <span id="/2017/08/02/majorityElementII/" class="leancloud_visitors" data-flag-title="【Leetcode】229. Majority Element II">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -340,11 +340,11 @@
       
 
       
-        <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>According to the Wikipedia’s article: “The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.”</p>
-<p>Given a board with m by n cells, each cell has an initial state live (1) or dead (0). Each cell interacts with its eight neighbors (horizontal, vertical, diagonal) using the following four rules (taken from the above Wikipedia article):</p>
-<p>Any live cell with fewer than two live neighbors dies, as if caused by under-population.<br>Any live cell with two or three live neighbors lives on to the next generation.<br>Any live cell with more than three live neighbors dies, as if by over-population..<br>Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.<br>Write a function to compute the next state (after one update) of the board given its current state.<br>Follow up:<br>1.Could you solve it in-place? Remember that the board needs to be updated at the same time: You cannot update some cells first and then use their updated values to update other cells.<br>2.In this question, we represent the board using a 2D array. In principle, the board is infinite, which would cause problems when the active area encroaches the border of the array. How would you address these problems?<br>Credits:<br>Special thanks to @jianchao.li.fighter for adding this problem and creating all test cases.</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">gameOfLife</span><span class="params">(<span class="keyword">int</span>[][] board)</span> </span>&#123;</div><div class="line">            <span class="comment">/*</span></div><div class="line">        根据题意,是这么几个状态:</div><div class="line">        第一位是初始状态,第二位是后续状态</div><div class="line">        0.00 初始挂,后续挂</div><div class="line">        1.01 初始活,后续挂</div><div class="line">        2.10 初始挂,后续活</div><div class="line">        3.11 初始活,后续活</div><div class="line">        首先要统计周围的存活个数,然后根据规则来判断:</div><div class="line">        1.周围存活小于2个,活的会挂</div><div class="line">        2.周围存活有2个或者3个,活的会活</div><div class="line">        3.周围存活超过3个,活的会挂</div><div class="line">        4.周围3个活的, 挂的会活</div><div class="line">         */</div><div class="line">        <span class="keyword">int</span> m = board.length;</div><div class="line">        <span class="keyword">int</span> n = board[<span class="number">0</span>].length;</div><div class="line">        <span class="keyword">if</span> (board == <span class="keyword">null</span> || (m == <span class="number">0</span> &amp;&amp; n == <span class="number">0</span>)) &#123;</div><div class="line">            <span class="keyword">return</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++) &#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n; j++) &#123;</div><div class="line">                <span class="keyword">int</span> lives = countLive(board, i, j, m, n);</div><div class="line">                <span class="comment">//现在board要么是0,要么是1</span></div><div class="line">                <span class="comment">//然后board变为10,要么是11才算存活下来</span></div><div class="line">                <span class="keyword">if</span> (board[i][j] == <span class="number">1</span> &amp;&amp; lives &gt;= <span class="number">2</span> &amp;&amp; lives &lt;= <span class="number">3</span>) &#123;</div><div class="line">                    board[i][j] = <span class="number">3</span>;</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">if</span> (board[i][j] == <span class="number">0</span> &amp;&amp; lives == <span class="number">3</span>) &#123;</div><div class="line">                    board[i][j] = <span class="number">2</span>;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++) &#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n; j++) &#123;</div><div class="line">                board[i][j] &gt;&gt;= <span class="number">1</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">countLive</span><span class="params">(<span class="keyword">int</span>[][] board, <span class="keyword">int</span> i , <span class="keyword">int</span> j, <span class="keyword">int</span> m, <span class="keyword">int</span> n)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> lives = <span class="number">0</span>;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> x = Math.max(i - <span class="number">1</span>, <span class="number">0</span>); x &lt;= Math.min(i + <span class="number">1</span>, m - <span class="number">1</span>); x++) &#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> y = Math.max(j - <span class="number">1</span>, <span class="number">0</span>); y &lt;= Math.min(j + <span class="number">1</span>, n - <span class="number">1</span>); y++) &#123;</div><div class="line">                lives += board[x][y] &amp; <span class="number">1</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        lives -= board[i][j] &amp; <span class="number">1</span>;</div><div class="line">        <span class="keyword">return</span> lives;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h2><p>注释已经写得很清楚了，这个解法真是清新易懂。</p>
+        <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times. The algorithm should run in linear time and in O(1) space.</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">majorityElement</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        <span class="comment">//appear more than n / 3 times</span></div><div class="line">        List&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</div><div class="line">        <span class="keyword">int</span> len = nums.length;</div><div class="line">        <span class="comment">//in O(1) space</span></div><div class="line">        Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> n : nums) &#123;</div><div class="line">            map.put(n, map.getOrDefault(n, <span class="number">0</span>) + <span class="number">1</span>);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">for</span> (Map.Entry&lt;Integer, Integer&gt; entry : map.entrySet()) &#123;</div><div class="line">            <span class="keyword">if</span> (entry.getValue() &gt; len / <span class="number">3</span>) &#123;</div><div class="line">                list.add(entry.getKey());</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> list;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2><p> AC</p>
+<h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">majorityElement</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        List&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</div><div class="line">        <span class="keyword">if</span> (nums.length == <span class="number">0</span> || nums.equals(<span class="keyword">null</span>)) &#123;</div><div class="line">            <span class="keyword">return</span> list;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">int</span> nums1 = nums[<span class="number">0</span>];</div><div class="line">        <span class="keyword">int</span> nums2 = nums[<span class="number">0</span>];</div><div class="line">        <span class="keyword">int</span> count1 = <span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> count2 = <span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> len = nums.length;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i  = <span class="number">0</span>; i &lt; len; i++) &#123;</div><div class="line">            <span class="keyword">if</span> (nums[i] == nums1) &#123;</div><div class="line">                count1++;</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (nums[i] == nums2) &#123;</div><div class="line">                count2++;</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (count1 == <span class="number">0</span>) &#123;</div><div class="line">                nums1 = nums[i];</div><div class="line">                count1 = <span class="number">1</span>;</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (count2 == <span class="number">0</span>) &#123;</div><div class="line">                nums2 = nums[i];</div><div class="line">                count2 = <span class="number">1</span>;</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                count1--;</div><div class="line">                count2--;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        count1 = <span class="number">0</span>;</div><div class="line">        count2 = <span class="number">0</span>;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> n : nums) &#123;</div><div class="line">            <span class="keyword">if</span> (n == nums1) &#123;</div><div class="line">                count1++;</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (n == nums2) &#123;</div><div class="line">                count2++;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (count1 &gt; len / <span class="number">3</span>) &#123;</div><div class="line">            list.add(nums1);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (count2 &gt; len /<span class="number">3</span>) &#123;</div><div class="line">            list.add(nums2);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> list;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h2 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h2><p>这个方法就是MajorityElement的方案的变形，但是要注意，一定开始是把count1和count2从0开始计算，若是都是开始从1开始计算，那么后面要计算count1和count2等于0的时候就会出问题。所以为了统一写法，就在majorityElement里直接改写法。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">majorityElement</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> len = nums.length;</div><div class="line">        <span class="keyword">int</span> n = nums[<span class="number">0</span>];</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</div><div class="line">            <span class="keyword">if</span> (nums[i] == n) &#123;</div><div class="line">                count++;</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (count == <span class="number">0</span>) &#123;</div><div class="line">                n = nums[i];</div><div class="line">                count = <span class="number">1</span>;</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                count--;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> n;</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -408,8 +408,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/12/randomizedCollection/" rel="next" title="【Leetcode】 381. Insert Delete GetRandom O(1) - Duplicates allowed">
-                <i class="fa fa-chevron-left"></i> 【Leetcode】 381. Insert Delete GetRandom O(1) - Duplicates allowed
+              <a href="/2017/08/01/majorityElement/" rel="next" title="【Leetcode】 169. Majority Element">
+                <i class="fa fa-chevron-left"></i> 【Leetcode】 169. Majority Element
               </a>
             
           </div>
@@ -417,10 +417,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/07/15/findDuplicate/" rel="prev" title="【Leetcode】287. Find the Duplicate Number">
-                【Leetcode】287. Find the Duplicate Number <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -576,7 +572,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Analyse"><span class="nav-number">3.</span> <span class="nav-text">Analyse</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Result"><span class="nav-number">3.</span> <span class="nav-text">Result</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Optimization"><span class="nav-number">4.</span> <span class="nav-text">Optimization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Analyse"><span class="nav-number">5.</span> <span class="nav-text">Analyse</span></a></li></ol></div>
             
 
           </div>
@@ -731,9 +727,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/07/13/gameOfLife/';
-          this.page.identifier = '2017/07/13/gameOfLife/';
-          this.page.title = '【Leetcode】289. Game of Life';
+          this.page.url = 'http://yoursite.com/2017/08/02/majorityElementII/';
+          this.page.identifier = '2017/08/02/majorityElementII/';
+          this.page.title = '【Leetcode】229. Majority Element II';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://sirius.disqus.com/embed.js';
