@@ -91,17 +91,17 @@
 
 
 
-<meta name="description" content="DescriptionGiven an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times. The algorithm should run in linear time and in O(1) space. Solution12345678910111213141516public Lis">
+<meta name="description" content="DescirptionRotate an array of n elements to the right by k steps. For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4]. Note:Try to come up as many solutions as y">
 <meta name="keywords" content="leetcode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【Leetcode】229. Majority Element II">
-<meta property="og:url" content="http://yoursite.com/2017/08/02/majorityElementII/index.html">
+<meta property="og:title" content="【Leetcode】189. Rotate Array">
+<meta property="og:url" content="http://yoursite.com/2017/09/04/rotateArray/index.html">
 <meta property="og:site_name" content="ChenZengze&#39;s Blog">
-<meta property="og:description" content="DescriptionGiven an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times. The algorithm should run in linear time and in O(1) space. Solution12345678910111213141516public Lis">
-<meta property="og:updated_time" content="2017-08-02T05:44:43.000Z">
+<meta property="og:description" content="DescirptionRotate an array of n elements to the right by k steps. For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4]. Note:Try to come up as many solutions as y">
+<meta property="og:updated_time" content="2017-09-04T15:46:48.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【Leetcode】229. Majority Element II">
-<meta name="twitter:description" content="DescriptionGiven an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times. The algorithm should run in linear time and in O(1) space. Solution12345678910111213141516public Lis">
+<meta name="twitter:title" content="【Leetcode】189. Rotate Array">
+<meta name="twitter:description" content="DescirptionRotate an array of n elements to the right by k steps. For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4]. Note:Try to come up as many solutions as y">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/02/majorityElementII/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/09/04/rotateArray/"/>
 
 
 
 
 
-  <title>【Leetcode】229. Majority Element II | ChenZengze's Blog</title>
+  <title>【Leetcode】189. Rotate Array | ChenZengze's Blog</title>
   
 
 
@@ -254,7 +254,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/02/majorityElementII/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/04/rotateArray/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="陈曾泽">
@@ -271,7 +271,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【Leetcode】229. Majority Element II</h1>
+          <h1 class="post-title" itemprop="name headline">【Leetcode】189. Rotate Array</h1>
         
 
         <div class="post-meta">
@@ -283,8 +283,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-02T13:19:40+08:00">
-                2017-08-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-04T23:41:55+08:00">
+                2017-09-04
               </time>
             
 
@@ -302,9 +302,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/08/02/majorityElementII/#comments" itemprop="discussionUrl">
+                <a href="/2017/09/04/rotateArray/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/08/02/majorityElementII/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/09/04/rotateArray/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -312,7 +312,7 @@
 
           
           
-             <span id="/2017/08/02/majorityElementII/" class="leancloud_visitors" data-flag-title="【Leetcode】229. Majority Element II">
+             <span id="/2017/09/04/rotateArray/" class="leancloud_visitors" data-flag-title="【Leetcode】189. Rotate Array">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -340,11 +340,18 @@
       
 
       
-        <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times. The algorithm should run in linear time and in O(1) space.</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">majorityElement</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        <span class="comment">//appear more than n / 3 times</span></div><div class="line">        List&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</div><div class="line">        <span class="keyword">int</span> len = nums.length;</div><div class="line">        <span class="comment">//in O(1) space</span></div><div class="line">        Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> n : nums) &#123;</div><div class="line">            map.put(n, map.getOrDefault(n, <span class="number">0</span>) + <span class="number">1</span>);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">for</span> (Map.Entry&lt;Integer, Integer&gt; entry : map.entrySet()) &#123;</div><div class="line">            <span class="keyword">if</span> (entry.getValue() &gt; len / <span class="number">3</span>) &#123;</div><div class="line">                list.add(entry.getKey());</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> list;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2><p> AC</p>
-<h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">majorityElement</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        List&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</div><div class="line">        <span class="keyword">if</span> (nums.length == <span class="number">0</span> || nums.equals(<span class="keyword">null</span>)) &#123;</div><div class="line">            <span class="keyword">return</span> list;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">int</span> nums1 = nums[<span class="number">0</span>];</div><div class="line">        <span class="keyword">int</span> nums2 = nums[<span class="number">0</span>];</div><div class="line">        <span class="keyword">int</span> count1 = <span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> count2 = <span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> len = nums.length;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i  = <span class="number">0</span>; i &lt; len; i++) &#123;</div><div class="line">            <span class="keyword">if</span> (nums[i] == nums1) &#123;</div><div class="line">                count1++;</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (nums[i] == nums2) &#123;</div><div class="line">                count2++;</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (count1 == <span class="number">0</span>) &#123;</div><div class="line">                nums1 = nums[i];</div><div class="line">                count1 = <span class="number">1</span>;</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (count2 == <span class="number">0</span>) &#123;</div><div class="line">                nums2 = nums[i];</div><div class="line">                count2 = <span class="number">1</span>;</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                count1--;</div><div class="line">                count2--;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        count1 = <span class="number">0</span>;</div><div class="line">        count2 = <span class="number">0</span>;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> n : nums) &#123;</div><div class="line">            <span class="keyword">if</span> (n == nums1) &#123;</div><div class="line">                count1++;</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (n == nums2) &#123;</div><div class="line">                count2++;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (count1 &gt; len / <span class="number">3</span>) &#123;</div><div class="line">            list.add(nums1);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (count2 &gt; len /<span class="number">3</span>) &#123;</div><div class="line">            list.add(nums2);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> list;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<h2 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h2><p>这个方法就是MajorityElement的方案的变形，但是要注意，一定开始是把count1和count2从0开始计算，若是都是开始从1开始计算，那么后面要计算count1和count2等于0的时候就会出问题。所以为了统一写法，就在majorityElement里直接改写法。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">majorityElement</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> len = nums.length;</div><div class="line">        <span class="keyword">int</span> n = nums[<span class="number">0</span>];</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</div><div class="line">            <span class="keyword">if</span> (nums[i] == n) &#123;</div><div class="line">                count++;</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (count == <span class="number">0</span>) &#123;</div><div class="line">                n = nums[i];</div><div class="line">                count = <span class="number">1</span>;</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                count--;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> n;</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
+        <h2 id="Descirption"><a href="#Descirption" class="headerlink" title="Descirption"></a>Descirption</h2><p>Rotate an array of n elements to the right by k steps.</p>
+<p>For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].</p>
+<p>Note:<br>Try to come up as many solutions as you can, there are at least 3 different ways to solve this problem.</p>
+<p>[show hint]</p>
+<p>Related problem: Reverse Words in a String II</p>
+<p>Credits:<br>Special thanks to @Freezen for adding this problem and creating all test cases.</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rotate</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> k)</span> </span>&#123;</div><div class="line">  <span class="keyword">if</span> (k &lt;= <span class="number">0</span> || nums.length == <span class="number">0</span>) &#123;</div><div class="line">  <span class="keyword">return</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">int</span> len = nums.length;</div><div class="line">  <span class="keyword">int</span> realDis = k % len;</div><div class="line">  <span class="keyword">int</span>[] newArray = <span class="keyword">new</span> <span class="keyword">int</span>[len];</div><div class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; realDis; i++) &#123;</div><div class="line">  newArray[i] = nums[i + len - realDis];</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> j = realDis; j &lt; len; j++) &#123;</div><div class="line">  newArray[j] = nums[j - realDis];</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> m = <span class="number">0</span>; m &lt; len; m++) &#123;</div><div class="line">  nums[m] = newArray[m];</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span>;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2><p>AC</p>
+<h2 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h2><p>这种方法很简单，就是简单的替换，O(n)的时间复杂度，O(n)的空间复杂度。</p>
+<h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><h3 id="First"><a href="#First" class="headerlink" title="First"></a>First</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rotate</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> k)</span> </span>&#123;</div><div class="line">  <span class="keyword">if</span> (k &lt;= <span class="number">0</span> || nums.length == <span class="number">0</span>) &#123;</div><div class="line">  <span class="keyword">return</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">int</span> realDis = k % nums.length;</div><div class="line">  reverse(nums, <span class="number">0</span>, nums.length - <span class="number">1</span>);</div><div class="line">  reverse(nums, <span class="number">0</span>, realDis - <span class="number">1</span>);</div><div class="line">  reverse(nums, realDis, nums.length - <span class="number">1</span>);</div><div class="line">  <span class="keyword">return</span>;</div><div class="line">  &#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">reverse</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> start, <span class="keyword">int</span> end)</span> </span>&#123;</div><div class="line">  <span class="keyword">while</span> (start &lt; end) &#123;</div><div class="line">  nums[start] ^= nums[end];</div><div class="line">  nums[end] ^= nums[start];</div><div class="line">  nums[start] ^= nums[end];</div><div class="line">  start++;</div><div class="line">  end--;</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span>;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<h3 id="Second"><a href="#Second" class="headerlink" title="Second"></a>Second</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rotate</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> k)</span> </span>&#123;</div><div class="line">  <span class="keyword">int</span> step = k % nums.length;</div><div class="line">  <span class="keyword">int</span> gcd = findGcd(nums.length, step);</div><div class="line">  <span class="keyword">int</span> position, count;</div><div class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; gcd; i++) &#123;</div><div class="line">  position = i;</div><div class="line">  count = nums.length / gcd - <span class="number">1</span>;</div><div class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; count; j++) &#123;</div><div class="line">  position = (position + step) % nums.length;</div><div class="line">  nums[i] ^= nums[position];</div><div class="line">  nums[position] ^= nums[i];</div><div class="line">  nums[i] ^= nums[position];</div><div class="line">  &#125;</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span>;</div><div class="line">  &#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">findGcd</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;</div><div class="line">  <span class="keyword">return</span> (a == <span class="number">0</span> || b == <span class="number">0</span>) ? (a + b) : findGcd(b, a%b);</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<h2 id="Analyse-1"><a href="#Analyse-1" class="headerlink" title="Analyse"></a>Analyse</h2><p>这个方法的思路很简单，第一个优化的措施是三步替换，替换的过程一步就可以看出，需要熟悉这个方法，时间复杂度是O(n)，空间复杂度是O(1)。第二个优化的思路值得学习，首先需要明确一个点就是：我们如果直接替换的话是需要怎样的步骤进行操作。这个时候就要提出来gcd，首先求出两者的最大公约数，这个最大公约数意味着该数字要替换多少轮，如果是第一轮就从0开始，然后依次递推，第二轮从1开始，第三轮从2开始等。然后在每一轮下，替换的次数就是数组长度除以gcd减去1得到要比较的轮数，每一轮都是开始的那个数，依次往后数step个数字，按照数组长度循环走，直到能走到和开始出发的数字重合。但是重合的时候就已经是被计算出来了，那么这样计算的结果是这个j只是计算了次数，看第n轮的开始的数字能替换多少次。</p>
 
       
     </div>
@@ -408,8 +415,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/01/majorityElement/" rel="next" title="【Leetcode】 169. Majority Element">
-                <i class="fa fa-chevron-left"></i> 【Leetcode】 169. Majority Element
+              <a href="/2017/08/14/kmp/" rel="next" title="KMP算法">
+                <i class="fa fa-chevron-left"></i> KMP算法
               </a>
             
           </div>
@@ -417,10 +424,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/04/summaryRanges/" rel="prev" title="【Leetcode】228. Summary Ranges">
-                【Leetcode】228. Summary Ranges <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -576,7 +579,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Result"><span class="nav-number">3.</span> <span class="nav-text">Result</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Optimization"><span class="nav-number">4.</span> <span class="nav-text">Optimization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Analyse"><span class="nav-number">5.</span> <span class="nav-text">Analyse</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Descirption"><span class="nav-number">1.</span> <span class="nav-text">Descirption</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Result"><span class="nav-number">3.</span> <span class="nav-text">Result</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Analyse"><span class="nav-number">4.</span> <span class="nav-text">Analyse</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Optimization"><span class="nav-number">5.</span> <span class="nav-text">Optimization</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#First"><span class="nav-number">5.1.</span> <span class="nav-text">First</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Second"><span class="nav-number">5.2.</span> <span class="nav-text">Second</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Analyse-1"><span class="nav-number">6.</span> <span class="nav-text">Analyse</span></a></li></ol></div>
             
 
           </div>
@@ -731,9 +734,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/08/02/majorityElementII/';
-          this.page.identifier = '2017/08/02/majorityElementII/';
-          this.page.title = '【Leetcode】229. Majority Element II';
+          this.page.url = 'http://yoursite.com/2017/09/04/rotateArray/';
+          this.page.identifier = '2017/09/04/rotateArray/';
+          this.page.title = '【Leetcode】189. Rotate Array';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://sirius.disqus.com/embed.js';
