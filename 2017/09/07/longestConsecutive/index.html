@@ -91,17 +91,17 @@
 
 
 
-<meta name="description" content="DescriptionGiven an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times. You may assume that the array is non-empty and the majority el">
+<meta name="description" content="DescriptionGiven an unsorted array of integers, find the length of the longest consecutive elements sequence. For example,Given [100, 4, 200, 1, 3, 2],The longest consecutive elements sequence is [1,">
 <meta name="keywords" content="leetcode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【Leetcode】 169. Majority Element">
-<meta property="og:url" content="http://yoursite.com/2017/08/01/majorityElement/index.html">
+<meta property="og:title" content="【Leetcode】128. Longest Consecutive Sequence">
+<meta property="og:url" content="http://yoursite.com/2017/09/07/longestConsecutive/index.html">
 <meta property="og:site_name" content="ChenZengze&#39;s Blog">
-<meta property="og:description" content="DescriptionGiven an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times. You may assume that the array is non-empty and the majority el">
-<meta property="og:updated_time" content="2017-08-01T06:06:50.000Z">
+<meta property="og:description" content="DescriptionGiven an unsorted array of integers, find the length of the longest consecutive elements sequence. For example,Given [100, 4, 200, 1, 3, 2],The longest consecutive elements sequence is [1,">
+<meta property="og:updated_time" content="2017-09-07T15:55:46.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【Leetcode】 169. Majority Element">
-<meta name="twitter:description" content="DescriptionGiven an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times. You may assume that the array is non-empty and the majority el">
+<meta name="twitter:title" content="【Leetcode】128. Longest Consecutive Sequence">
+<meta name="twitter:description" content="DescriptionGiven an unsorted array of integers, find the length of the longest consecutive elements sequence. For example,Given [100, 4, 200, 1, 3, 2],The longest consecutive elements sequence is [1,">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/01/majorityElement/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/09/07/longestConsecutive/"/>
 
 
 
 
 
-  <title>【Leetcode】 169. Majority Element | ChenZengze's Blog</title>
+  <title>【Leetcode】128. Longest Consecutive Sequence | ChenZengze's Blog</title>
   
 
 
@@ -254,7 +254,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/01/majorityElement/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/07/longestConsecutive/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="陈曾泽">
@@ -271,7 +271,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【Leetcode】 169. Majority Element</h1>
+          <h1 class="post-title" itemprop="name headline">【Leetcode】128. Longest Consecutive Sequence</h1>
         
 
         <div class="post-meta">
@@ -283,8 +283,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-01T13:59:06+08:00">
-                2017-08-01
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-07T23:46:25+08:00">
+                2017-09-07
               </time>
             
 
@@ -302,9 +302,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/08/01/majorityElement/#comments" itemprop="discussionUrl">
+                <a href="/2017/09/07/longestConsecutive/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/08/01/majorityElement/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/09/07/longestConsecutive/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -312,7 +312,7 @@
 
           
           
-             <span id="/2017/08/01/majorityElement/" class="leancloud_visitors" data-flag-title="【Leetcode】 169. Majority Element">
+             <span id="/2017/09/07/longestConsecutive/" class="leancloud_visitors" data-flag-title="【Leetcode】128. Longest Consecutive Sequence">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -340,12 +340,15 @@
       
 
       
-        <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.</p>
-<p>You may assume that the array is non-empty and the majority element always exist in the array.</p>
-<p>Credits:<br>Special thanks to @ts for adding this problem and creating all test cases.</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">majorityElement</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        Arrays.sort(nums);</div><div class="line">        <span class="keyword">int</span> len = nums.length;</div><div class="line">        <span class="keyword">if</span> (len == <span class="number">1</span>) &#123;</div><div class="line">            <span class="keyword">return</span> nums[<span class="number">0</span>];</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            <span class="keyword">return</span> nums[len / <span class="number">2</span>];</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">majorityElement</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> count = <span class="number">1</span>;</div><div class="line">        <span class="keyword">int</span> major = nums[<span class="number">0</span>];</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; nums.length; i++) &#123;</div><div class="line">            <span class="keyword">if</span> (count == <span class="number">0</span>) &#123;</div><div class="line">                major = nums[i];</div><div class="line">                count = <span class="number">1</span>;</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (major == nums[i]) &#123;</div><div class="line">                count++;</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                count--;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> major;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<h2 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h2><p>这里注意是大于长度的一半的，所以可以根据条件来加count。</p>
+        <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given an unsorted array of integers, find the length of the longest consecutive elements sequence.</p>
+<p>For example,<br>Given [100, 4, 200, 1, 3, 2],<br>The longest consecutive elements sequence is [1, 2, 3, 4]. Return its length: 4.</p>
+<p>Your algorithm should run in O(n) complexity.</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">longestConsecutive</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (nums.length &lt;= <span class="number">1</span>) &#123;</div><div class="line">            <span class="keyword">return</span> nums.length;</div><div class="line">        &#125;</div><div class="line">        Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</div><div class="line">        <span class="keyword">int</span> max = <span class="number">1</span>;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</div><div class="line">            <span class="comment">//map不会包含nums[i]</span></div><div class="line">            <span class="keyword">if</span> (map.containsKey(nums[i])) &#123;</div><div class="line">                <span class="keyword">continue</span>;</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                map.put(nums[i], <span class="number">1</span>);</div><div class="line">                <span class="keyword">if</span> (map.containsKey(nums[i] + <span class="number">1</span>) &amp;&amp; map.containsKey(nums[i]- <span class="number">1</span>)) &#123;</div><div class="line">                    <span class="comment">//look for both sides</span></div><div class="line">                    <span class="keyword">int</span> count1 = <span class="number">1</span>;</div><div class="line">                    <span class="keyword">while</span> (map.containsKey(nums[i] + count1)) &#123;</div><div class="line">                        count1++;</div><div class="line">                    &#125;</div><div class="line">                    <span class="keyword">int</span> rightBorder = nums[i] + count1 - <span class="number">1</span>;</div><div class="line"></div><div class="line">                    <span class="keyword">int</span> count2 = <span class="number">1</span>;</div><div class="line">                    <span class="keyword">while</span> (map.containsKey(nums[i] - count2)) &#123;</div><div class="line">                        count2++;</div><div class="line">                    &#125;</div><div class="line">                    <span class="keyword">int</span> leftBorder = nums[i] - count2 + <span class="number">1</span>;</div><div class="line"></div><div class="line">                    <span class="keyword">int</span> temp = map.get(leftBorder) + map.get(rightBorder) + <span class="number">1</span>;</div><div class="line">                    map.put(leftBorder, temp);</div><div class="line">                    map.put(rightBorder, temp);</div><div class="line">                    max = Math.max(max, map.get(leftBorder));</div><div class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (map.containsKey(nums[i] - <span class="number">1</span>)) &#123;</div><div class="line">                    <span class="comment">//look for left</span></div><div class="line">                    <span class="keyword">int</span> count3 = <span class="number">1</span>;</div><div class="line">                    <span class="keyword">while</span> (map.containsKey(nums[i] - count3)) &#123;</div><div class="line">                        count3++;</div><div class="line">                    &#125;</div><div class="line">                    <span class="keyword">int</span> leftBoard1 = nums[i] - count3 + <span class="number">1</span>;</div><div class="line">                    <span class="keyword">int</span> temp2 = map.get(leftBoard1) + <span class="number">1</span>;</div><div class="line">                    map.put(leftBoard1, temp2);</div><div class="line">                    map.put(nums[i], temp2);</div><div class="line">                    max = Math.max(max, map.get(nums[i]));</div><div class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (map.containsKey(nums[i] + <span class="number">1</span>)) &#123;</div><div class="line">                    <span class="comment">//look for right</span></div><div class="line">                    <span class="keyword">int</span> count4 = <span class="number">1</span>;</div><div class="line">                    <span class="keyword">while</span> (map.containsKey(nums[i] + count4)) &#123;</div><div class="line">                        count4++;</div><div class="line">                    &#125;</div><div class="line">                    <span class="keyword">int</span> rightBorder1 = nums[i] + count4 - <span class="number">1</span>;</div><div class="line">                    <span class="keyword">int</span> temp3 = map.get(rightBorder1) + <span class="number">1</span>;</div><div class="line">                    map.put(rightBorder1, temp3);</div><div class="line">                    map.put(nums[i], temp3);</div><div class="line">                    max = Math.max(max, map.get(nums[i]));</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> max;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2><p>TLE</p>
+<h2 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h2><p>这里开始没有思路，然后看了一下结题思路，自己的解法，复杂度是O(n ^ 2)，出现TLE也很正常，说明在思路和代码的转化过程中还是有一定差距。</p>
+<h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><h3 id="First"><a href="#First" class="headerlink" title="First"></a>First</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">longestConsecutive</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</div><div class="line">        Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> n : nums) &#123;</div><div class="line">            <span class="keyword">if</span> (!map.containsKey(n)) &#123;</div><div class="line">                <span class="keyword">int</span> left = map.containsKey(n - <span class="number">1</span>) ? map.get(n - <span class="number">1</span>) : <span class="number">0</span>;</div><div class="line">                <span class="keyword">int</span> right = map.containsKey(n + <span class="number">1</span>) ? map.get(n + <span class="number">1</span>) : <span class="number">0</span>;</div><div class="line">                <span class="keyword">int</span> sum = left + right + <span class="number">1</span>;</div><div class="line">                map.put(n, sum);</div><div class="line">                res = Math.max(res, sum);</div><div class="line"></div><div class="line">                map.put(n - left, sum);</div><div class="line">                map.put(n + right, sum);</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                <span class="keyword">continue</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h3 id="Second"><a href="#Second" class="headerlink" title="Second"></a>Second</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">longestConsecutive</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (nums.length &lt;= <span class="number">1</span>) &#123;</div><div class="line">            <span class="keyword">return</span> nums.length;</div><div class="line">        &#125;</div><div class="line">        Set&lt;Integer&gt; set = <span class="keyword">new</span> HashSet&lt;&gt;();</div><div class="line">        <span class="keyword">int</span> max = <span class="number">1</span>;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> n : nums) &#123;</div><div class="line">            set.add(n);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> n : nums) &#123;</div><div class="line">            <span class="keyword">if</span> (set.remove(n)) &#123;</div><div class="line">                <span class="keyword">int</span> num = n;</div><div class="line">                <span class="keyword">int</span> sum = <span class="number">1</span>;</div><div class="line">                <span class="keyword">while</span> (set.remove(num - <span class="number">1</span>)) &#123;</div><div class="line">                    num--;</div><div class="line">                &#125;</div><div class="line">                sum += n - num;</div><div class="line"></div><div class="line">                num = n;</div><div class="line">                <span class="keyword">while</span> (set.remove(num + <span class="number">1</span>)) &#123;</div><div class="line">                    num++;</div><div class="line">                &#125;</div><div class="line">                sum += num - n;</div><div class="line">                max = Math.max(max, sum);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> max;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h3 id="Analyse-1"><a href="#Analyse-1" class="headerlink" title="Analyse"></a>Analyse</h3><p>这里用了一个思路就是，一个连续的数组的话，边界的key存储的value都是这个连续数组的长度。每次都依次进行更新。而第二个set的思路更为简单，主要还是利用set的api，熟悉remove方法的话就会很容易。这里的复杂度都是O(n)。</p>
 
       
     </div>
@@ -409,8 +412,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/01/productExceptSelf/" rel="next" title="【Leetcode】238. Product of Array Except Self">
-                <i class="fa fa-chevron-left"></i> 【Leetcode】238. Product of Array Except Self
+              <a href="/2017/09/07/maxProduct/" rel="next" title="【Leetcode】152. Maximum Product Subarray">
+                <i class="fa fa-chevron-left"></i> 【Leetcode】152. Maximum Product Subarray
               </a>
             
           </div>
@@ -418,10 +421,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/02/majorityElementII/" rel="prev" title="【Leetcode】229. Majority Element II">
-                【Leetcode】229. Majority Element II <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -577,7 +576,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Optimization"><span class="nav-number">3.</span> <span class="nav-text">Optimization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Analyse"><span class="nav-number">4.</span> <span class="nav-text">Analyse</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Result"><span class="nav-number">3.</span> <span class="nav-text">Result</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Analyse"><span class="nav-number">4.</span> <span class="nav-text">Analyse</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Optimization"><span class="nav-number">5.</span> <span class="nav-text">Optimization</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#First"><span class="nav-number">5.1.</span> <span class="nav-text">First</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Second"><span class="nav-number">5.2.</span> <span class="nav-text">Second</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Analyse-1"><span class="nav-number">5.3.</span> <span class="nav-text">Analyse</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -732,9 +731,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/08/01/majorityElement/';
-          this.page.identifier = '2017/08/01/majorityElement/';
-          this.page.title = '【Leetcode】 169. Majority Element';
+          this.page.url = 'http://yoursite.com/2017/09/07/longestConsecutive/';
+          this.page.identifier = '2017/09/07/longestConsecutive/';
+          this.page.title = '【Leetcode】128. Longest Consecutive Sequence';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://sirius.disqus.com/embed.js';
