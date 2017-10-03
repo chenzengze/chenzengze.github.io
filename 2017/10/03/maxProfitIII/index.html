@@ -91,17 +91,17 @@
 
 
 
-<meta name="description" content="DescriptionDesign a data structure that supports all following operations in average O(1) time.1.insert(val): Inserts an item val to the set if not already present.2.remove(val): Removes an item val f">
+<meta name="description" content="DescriptionSay you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You may complete at most two transactions. Note:You m">
 <meta name="keywords" content="leetcode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【Leetcode】380. Insert Delete GetRandom O(1)">
-<meta property="og:url" content="http://yoursite.com/2017/07/08/randomizedSet/index.html">
+<meta property="og:title" content="【Leetcode】Best Time to Buy and Sell Stock III">
+<meta property="og:url" content="http://yoursite.com/2017/10/03/maxProfitIII/index.html">
 <meta property="og:site_name" content="ChenZengze&#39;s Blog">
-<meta property="og:description" content="DescriptionDesign a data structure that supports all following operations in average O(1) time.1.insert(val): Inserts an item val to the set if not already present.2.remove(val): Removes an item val f">
-<meta property="og:updated_time" content="2017-07-08T09:18:18.000Z">
+<meta property="og:description" content="DescriptionSay you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You may complete at most two transactions. Note:You m">
+<meta property="og:updated_time" content="2017-10-03T07:53:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【Leetcode】380. Insert Delete GetRandom O(1)">
-<meta name="twitter:description" content="DescriptionDesign a data structure that supports all following operations in average O(1) time.1.insert(val): Inserts an item val to the set if not already present.2.remove(val): Removes an item val f">
+<meta name="twitter:title" content="【Leetcode】Best Time to Buy and Sell Stock III">
+<meta name="twitter:description" content="DescriptionSay you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You may complete at most two transactions. Note:You m">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/07/08/randomizedSet/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/10/03/maxProfitIII/"/>
 
 
 
 
 
-  <title>【Leetcode】380. Insert Delete GetRandom O(1) | ChenZengze's Blog</title>
+  <title>【Leetcode】Best Time to Buy and Sell Stock III | ChenZengze's Blog</title>
   
 
 
@@ -254,7 +254,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/08/randomizedSet/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/03/maxProfitIII/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="陈曾泽">
@@ -271,7 +271,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【Leetcode】380. Insert Delete GetRandom O(1)</h1>
+          <h1 class="post-title" itemprop="name headline">【Leetcode】Best Time to Buy and Sell Stock III</h1>
         
 
         <div class="post-meta">
@@ -283,8 +283,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-08T17:08:15+08:00">
-                2017-07-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-03T13:07:30+08:00">
+                2017-10-03
               </time>
             
 
@@ -302,9 +302,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/07/08/randomizedSet/#comments" itemprop="discussionUrl">
+                <a href="/2017/10/03/maxProfitIII/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/07/08/randomizedSet/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/10/03/maxProfitIII/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -312,7 +312,7 @@
 
           
           
-             <span id="/2017/07/08/randomizedSet/" class="leancloud_visitors" data-flag-title="【Leetcode】380. Insert Delete GetRandom O(1)">
+             <span id="/2017/10/03/maxProfitIII/" class="leancloud_visitors" data-flag-title="【Leetcode】Best Time to Buy and Sell Stock III">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -340,10 +340,14 @@
       
 
       
-        <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Design a data structure that supports all following operations in average O(1) time.<br>1.insert(val): Inserts an item val to the set if not already present.<br>2.remove(val): Removes an item val from the set if present.<br>3.getRandom: Returns a random element from current set of elements. Each element must have the same probability of being returned.</p>
-<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Init an empty set.</span></div><div class="line">RandomizedSet randomSet = <span class="keyword">new</span> RandomizedSet();</div><div class="line"></div><div class="line"><span class="comment">// Inserts 1 to the set. Returns true as 1 was inserted successfully.</span></div><div class="line">randomSet.insert(<span class="number">1</span>);</div><div class="line"></div><div class="line"><span class="comment">// Returns false as 2 does not exist in the set.</span></div><div class="line">randomSet.remove(<span class="number">2</span>);</div><div class="line"></div><div class="line"><span class="comment">// Inserts 2 to the set, returns true. Set now contains [1,2].</span></div><div class="line">randomSet.insert(<span class="number">2</span>);</div><div class="line"></div><div class="line"><span class="comment">// getRandom should return either 1 or 2 randomly.</span></div><div class="line">randomSet.getRandom();</div><div class="line"></div><div class="line"><span class="comment">// Removes 1 from the set, returns true. Set now contains [2].</span></div><div class="line">randomSet.remove(<span class="number">1</span>);</div><div class="line"></div><div class="line"><span class="comment">// 2 was already in the set, so return false.</span></div><div class="line">randomSet.insert(<span class="number">2</span>);</div><div class="line"></div><div class="line"><span class="comment">// Since 2 is the only number in the set, getRandom always return 2.</span></div><div class="line">randomSet.getRandom();</div></pre></td></tr></table></figure>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RandomizedSet</span> </span>&#123;</div><div class="line"></div><div class="line">    List&lt;Integer&gt; nums;</div><div class="line">    HashMap&lt;Integer, Integer&gt; map;</div><div class="line">    java.util.Random rand = <span class="keyword">new</span> java.util.Random();</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">RandomizedSet</span><span class="params">()</span> </span>&#123;</div><div class="line">        nums = <span class="keyword">new</span> ArrayList&lt;&gt;();</div><div class="line">        map = <span class="keyword">new</span> HashMap&lt;&gt;();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> val)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (nums.contains(val)) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">        &#125;</div><div class="line">        map.put(val, nums.size());</div><div class="line">        nums.add(val);</div><div class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">remove</span><span class="params">(<span class="keyword">int</span> val)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (!nums.contains(val)) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (map.get(val) &lt; nums.size() - <span class="number">1</span>) &#123;</div><div class="line">            <span class="comment">//not end, transfer to end</span></div><div class="line">            <span class="keyword">int</span> lastone = nums.get(nums.size() - <span class="number">1</span>);</div><div class="line">            nums.set(map.get(val), lastone);</div><div class="line">            map.put(lastone, map.get(val));</div><div class="line">        &#125;</div><div class="line">        nums.remove(nums.size() - <span class="number">1</span>);</div><div class="line">        map.remove(val);</div><div class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getRandom</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> nums.get(rand.nextInt(nums.size()));</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h2><p>以前都不太会做这种题，今天仔细想了一下，还是参考了答案写出来。这种来就类似于在面试的时候给你两个队列来实现栈之类的问题，我记得美团和头条都有问过类似的问题，每次都被恶心到了。这里需要的确实是要把每个函数写的很完整没有一点bug。<br>开始认为可以只使用nums，因为getRandom和insert都只用nums都可以，但是delete就不行，因为nums的remove有问题，因为题目要求的复杂度是O(1)，你如果不是最后的数字的话，肯定需要遍历list，这样复杂度就不是O(1)了，所以加一个hashmap一点问题都没有。</p>
+        <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Say you have an array for which the ith element is the price of a given stock on day i.</p>
+<p>Design an algorithm to find the maximum profit. You may complete at most two transactions.</p>
+<p>Note:<br>You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxProfit</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (nums.length == <span class="number">0</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">int</span> max = <span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span>[] left = <span class="keyword">new</span> <span class="keyword">int</span>[nums.length];</div><div class="line">        <span class="keyword">int</span>[] right = <span class="keyword">new</span> <span class="keyword">int</span>[nums.length];</div><div class="line">        process(nums, left, right);</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</div><div class="line">            max = Math.max(max, left[i] + right[i]);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> max;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">process</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span>[] left, <span class="keyword">int</span>[] right)</span> </span>&#123;</div><div class="line">        left[<span class="number">0</span>] = <span class="number">0</span>;</div><div class="line">        right[nums.length - <span class="number">1</span>] = <span class="number">0</span>;</div><div class="line">        <span class="keyword">int</span> min = nums[<span class="number">0</span>];</div><div class="line">        <span class="keyword">int</span> max = nums[nums.length - <span class="number">1</span>];</div><div class="line">        <span class="comment">//from left, one time</span></div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; nums.length; i++) &#123;</div><div class="line">            left[i] = Math.max(left[i - <span class="number">1</span>], nums[i] - min);</div><div class="line">            min = Math.min(min, nums[i]);</div><div class="line">        &#125;</div><div class="line">        <span class="comment">//from right, one time</span></div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = nums.length - <span class="number">2</span>; j &gt;= <span class="number">0</span>; j--) &#123;</div><div class="line">            right[j] = Math.max(right[j + <span class="number">1</span>], max - nums[j]);</div><div class="line">            max = Math.max(max, nums[j]);</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2><p>AC</p>
+<h2 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h2><p>这个思路比较好想出来，因为是两次操作，可以从左边和右边同时开始操作。看的是nums[0….i]和nums[i + 1…..nums.length - 1]之间的两次交易大小，然后再取和。这里的思路是left的求得方法还是从左到右，求得最高的差值，right是从右到左，依次求得最高的差值，如果两者有重合，可以累积起来加成和的形式可以得到两次的最大和值。这里的时间复杂度是O(n)。其实思路还是很稳的，比较容易想出来。</p>
+<h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">maxProfit_</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> max(nums, <span class="number">2</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">max</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> k)</span></span>&#123;</div><div class="line">        <span class="keyword">int</span> len = nums.length;</div><div class="line">        <span class="keyword">if</span> (len == <span class="number">0</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="comment">//local是第i天进行了j次交易,同时最后一天也有交易</span></div><div class="line">        <span class="comment">//因此数组的大小设置为len和k + 1</span></div><div class="line">        <span class="keyword">int</span>[][] local = <span class="keyword">new</span> <span class="keyword">int</span>[len][k + <span class="number">1</span>];</div><div class="line">        <span class="comment">//global是第i天进行了j次交易</span></div><div class="line">        <span class="keyword">int</span>[][] global = <span class="keyword">new</span> <span class="keyword">int</span>[len][k + <span class="number">1</span>];</div><div class="line"></div><div class="line">        <span class="comment">//最后是这种情况</span></div><div class="line">        <span class="comment">//i - 1天进行k - 1次交易</span></div><div class="line"></div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; len; i++) &#123;</div><div class="line">            <span class="keyword">int</span> diff = nums[i] - nums[i - <span class="number">1</span>];</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;=k; j++) &#123;</div><div class="line">                <span class="comment">//global[i - 1][j -1]是i - 1天进行了j - 1次交易, 如果是diff &gt;0, 就是买了i - 1天的,然后第i天出售,</span></div><div class="line">                <span class="comment">//如果diff &lt; 0,就是买了i天的,然后第i天出售,那么这样配合前面的global[i - 1][j - 1]就是i - 1天j - 1次交易</span></div><div class="line">                <span class="comment">//变成了i天j次交易,而且最后一次交易在第j天.</span></div><div class="line">                <span class="comment">//local[i- 1][j]是i - 1天进行了j次交易,而且第j次交易是在i - 1天,那么加上diff的话就是第i - 1天卖出的,等到了第</span></div><div class="line">                <span class="comment">//i天卖出,天数多了一天,其实交易次数并没有改变.</span></div><div class="line"></div><div class="line">                <span class="comment">//global[i][j] 是i天进行了j次交易,那么就是 i- 1天进行j次交易,和 i天进行j次交易,并且最后一次交易在第i天进行的,两者的最大值.</span></div><div class="line">                <span class="comment">//注意这个地方肯定是交易次数不能改变,从local[i][j]的角度来看就是和不在最后一天交易的比,那么就是global[i- 1][j]</span></div><div class="line"></div><div class="line">                <span class="comment">//local[i][j] = Math.max(global[i - 1][j - 1] + Math.max(diff, 0), local[i - 1][j] + diff);</span></div><div class="line"></div><div class="line"></div><div class="line">                <span class="comment">//当天买了当天卖算一次交易</span></div><div class="line">                <span class="comment">//当天买了,第二天卖,第二天买了,第三天卖,算一次交易.</span></div><div class="line">                <span class="comment">//i - 1天进行了j - 1次交易</span></div><div class="line">                local[i][j] = Math.max(global[i - <span class="number">1</span>][j - <span class="number">1</span>] + Math.max(diff, <span class="number">0</span>), local[i - <span class="number">1</span>][j] + diff);</div><div class="line">                global[i][j] = Math.max(local[i][j], global[i - <span class="number">1</span>][j]);</div><div class="line"></div><div class="line">                <span class="comment">//至于为什么要先求local,再求global,因为是求了local的结果,才得到global的值.</span></div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> global[len - <span class="number">1</span>][k];</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h2 id="Analyse-1"><a href="#Analyse-1" class="headerlink" title="Analyse"></a>Analyse</h2><p>这个时间复杂度是O(n*k)，主要是要利用两个思路是设计local和global的用法比较重要。local是利用了交易刚好在最后一天，而global则是全局的交易方案。只有先得到local才能得到全局的结果。</p>
 
       
     </div>
@@ -407,8 +411,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/07/thirdMaximumNumber/" rel="next" title="【Leetcode】414. Third Maximum Number">
-                <i class="fa fa-chevron-left"></i> 【Leetcode】414. Third Maximum Number
+              <a href="/2017/09/17/maxProfitII/" rel="next" title="【Leetcode】122. Best Time to Buy and Sell Stock II">
+                <i class="fa fa-chevron-left"></i> 【Leetcode】122. Best Time to Buy and Sell Stock II
               </a>
             
           </div>
@@ -416,10 +420,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/07/12/randomizedCollection/" rel="prev" title="【Leetcode】 381. Insert Delete GetRandom O(1) - Duplicates allowed">
-                【Leetcode】 381. Insert Delete GetRandom O(1) - Duplicates allowed <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -575,7 +575,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-number">2.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Analyse"><span class="nav-number">4.</span> <span class="nav-text">Analyse</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Result"><span class="nav-number">3.</span> <span class="nav-text">Result</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Analyse"><span class="nav-number">4.</span> <span class="nav-text">Analyse</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Optimization"><span class="nav-number">5.</span> <span class="nav-text">Optimization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Analyse-1"><span class="nav-number">6.</span> <span class="nav-text">Analyse</span></a></li></ol></div>
             
 
           </div>
@@ -730,9 +730,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/07/08/randomizedSet/';
-          this.page.identifier = '2017/07/08/randomizedSet/';
-          this.page.title = '【Leetcode】380. Insert Delete GetRandom O(1)';
+          this.page.url = 'http://yoursite.com/2017/10/03/maxProfitIII/';
+          this.page.identifier = '2017/10/03/maxProfitIII/';
+          this.page.title = '【Leetcode】Best Time to Buy and Sell Stock III';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://sirius.disqus.com/embed.js';
